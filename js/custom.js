@@ -7,6 +7,9 @@ $(window).load(function () {
         'overflow': 'visible'
     });
 
+    //Contact addition
+
+   
 
     //  isotope
     var $container = $('.portfolio_container');
@@ -61,3 +64,4 @@ $(window).load(function () {
         }
     });
 });
+
