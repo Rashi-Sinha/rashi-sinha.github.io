@@ -43,8 +43,9 @@
           vertical-align: middle;
         }
         .slideshow-container {
-          max-width: 1000px;
+          max-width: 600px;
           position: relative;
+          max-height: 600px;
           margin: auto;
         }
         /* Next & previous buttons */
@@ -85,11 +86,14 @@
         }
         /* Number text (1/3 etc) */
         .numbertext {
-          color: #da5252;
+          color: #ffffff;
           font-size: 12px;
           padding: 8px 12px;
           position: absolute;
           top: 0;
+        }
+        .marginBottom {
+          margin-bottom: 20px;
         }
         /* The dots/bullets/indicators */
         .dot {
@@ -200,31 +204,189 @@
     
     <!-- main-container -->
     <div class="container main-container">
-       <!--  <div class="col-md-12">
-            <img src="img/works/05.jpg" alt="" class="img-responsive" />
-            <div class="h-30"></div>
-        </div> -->
 
-        <!--<div class="slideshow-container">
+        <div class="col-md-12">
+            <h3 class="text-uppercase">Rasterizer</h3>
+            <!--<h5>Time to cool down</h5>-->
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+          <p>This was a group project implementing a 3D rasterizer from scratch without using any graphics libraries. It program reads in a user specified 
+            scene file and renders 2D images.</p>
+
+          <p>Coded in <u>Python</u> with scene files in <u>JSON</u> format.</p> 
+
+          <p><b>Note:</b> We do not own any of the input 3d scenes files, texture images or background images used for creating the below rendered images.
+            The source references for these all of these files can be found in the project report linked in the "More" section below.
+          </p>
+
+          <div class="h-30"></div>
+        
+
+        <!-- Stylized Render -->
+        <div>
+          <p><h4><b>Stylized Rendering Features:</b></p>
+          <div class="h-10"></div>
+          <!-- Toon Shading -->
+          <h5><b>1. Toon Shading</b></h5>
+          <div class="row">
+            <div class="col-md-4">
+              <p>Basic Render (Left)</p>
+              <div class="h-10"></div>
+              <img src="img/works/scratchRenderer/jinx_0.png" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+            <div class="col-md-4">
+              <p>Toon Shaded Render (Right)</p>
+              <div class="h-10"></div>
+              <img src="img/works/scratchRenderer/jinx_2.png" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+            <!-- Line Art -->
+            <!-- <h5><b>2. Line Art</b></h5>
+            <p>Basic Render (Left), Line Art Render (Right)</p>
+            <div class="h-10"></div>
+            <img src="img/works/scratchRenderer/sunny_0.png" alt="" class="img-responsive" />
+            <div class="h-30"></div> -->
+            <!-- Halftone Shading -->
+            <!-- <h5><b>1. Halftone Shading</b></h5>
+            <p>Basic Render (Left), Halftone Render (Right)</p>
+            <div class="h-10"></div>
+            <img src="img/works/scratchRenderer/teapot_0.png" alt="" class="img-responsive" />
+            <div class="h-30"></div> -->
+          </div>
+          <!-- Line Art -->
+          <h5><b>2. Line Art</b></h5>
+          <div class="row">
+            <div class="col-md-4">
+              <p>Basic Render (Left)</p>
+              <div class="h-10"></div>
+              <img src="img/works/scratchRenderer/sunny_0.png" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+            <div class="col-md-4">
+              <p>Line Art Render (Right)</p>
+              <div class="h-10"></div>
+              <img src="img/works/scratchRenderer/sunny_3.png" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+          </div>
+          <!-- Halftone Shading-->
+          <h5><b>3. Halftone Shading</b></h5>
+          <div class="row">
+            <div class="col-md-4">
+              <p>Basic Render (Left)</p>
+              <div class="h-10"></div>
+              <img src="img/works/scratchRenderer/teapot_0.png" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+            <div class="col-md-4">
+              <p>Halftone Shading Render (Right)</p>
+              <div class="h-10"></div>
+              <img src="img/works/scratchRenderer/teapot_1.png" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Other Features -->
+        <div class="h-30"></div>
+        <div class="col-md-12 ">
+          <h4><b>Other Features:</b></h4>
+          <p>Wireframes, Screen Space Ambient Occlusion, Shadow Mapping and Normal Mapping.</p>
+        </div>
+
+        <!-- Team members -->
+        <div class="col-md-12 marginBottom">
+          <h4><b>Team Members & Contributions</b></h4>
+
+          <li><a href="">Shravan Kumar</a>
+            : Screen space ambient occlusion and 3D mesh compatibility with rasterizer.
+          </li>
+          <li><a href="">Luiz Cilento</a>
+            : Shadow Mapping
+          </li>
+          <li><a href="">Yaorong Xie</a>
+            : Normal Mapping
+          </li>
+          <li>Rashi Sinha (Me)
+            : Wireframes and Stylized Rendering
+          </li>
+        </div>
+        
+        <!-- Render Showcase -->
+        <div class="col-md-12" >
+          <h4><b>Render Showcase</b></h4>
+
+          <!-- SLIDESHOW -->
+          <div class="slideshow-container">
             <div class="mySlides">
-              <div class="numbertext">1 / 4</div>
-              <img src="img/works/rt/002.jpg" style="width:100%">
-              
+              <div class="numbertext">1 / 16 <b>Hollow Knight:</b> Basic Render</div>
+              <img src="img/works/scratchRenderer/hollowKnight_0.png" style="width:100%">
             </div>
             <div class="mySlides">
-              <div class="numbertext">2 / 4</div>
-              <img src="img/works/rt/003.jpg" style="width:100%">
-              
+              <div class="numbertext">2 / 16 <b>Hollow Knight:</b> Toon Shading</div>
+              <img src="img/works/scratchRenderer/hollowKnight_2.png" style="width:100%">
             </div>
             <div class="mySlides">
-              <div class="numbertext">3 / 4</div>
-              <img src="img/works/rt/004.jpg" style="width:100%">
-              
+              <div class="numbertext">3 / 16 <b>Hollow Knight:</b> Line Art</div>
+              <img src="img/works/scratchRenderer/hollowKnight_4.png" style="width:100%">
             </div>
             <div class="mySlides">
-              <div class="numbertext">4 / 4</div>
-              <img src="img/works/rt/001.jpg" style="width:100%">
-              
+              <div class="numbertext">4 / 16 <b>Hollow Knight:</b> Halftone Shading</div>
+              <img src="img/works/scratchRenderer/hollowKnight_3.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 16 <b>Hollow Knight:</b> Wireframe</div>
+              <img src="img/works/scratchRenderer/hollowKnight_1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 16 <b>Artorias:</b> Basic Render</div>
+              <img src="img/works/scratchRenderer/artorias_0.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 16 <b>Artorias:</b> Ambient Occlusion, Shadows & Normal Mapping</div>
+              <img src="img/works/scratchRenderer/artorias_1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 16 <b>Jinx:</b> Ambient Occlusion, Shadows & Normal Mapping</div>
+              <img src="img/works/scratchRenderer/jinx_1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9 / 16 <b>Jinx:</b> Line Art</div>
+              <img src="img/works/scratchRenderer/jinx_4.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">10 / 16 <b>Jinx:</b> Halftone Shading</div>
+              <img src="img/works/scratchRenderer/jinx_3.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">11 / 16 <b>Jinx:</b> Wireframe</div>
+              <img src="img/works/scratchRenderer/jinx_5.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">12 / 16 <b>Luffy:</b> Basic Render</div>
+              <img src="img/works/scratchRenderer/luffy_0.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">13 / 16 <b>Luffy:</b> Toon Shading</div>
+              <img src="img/works/scratchRenderer/luffy_1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">14 / 16 <b>Sunny:</b> Toon Shading</div>
+              <img src="img/works/scratchRenderer/sunny_1.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext" color="#999999">15 / 16 <b>Sunny:</b> Wireframe</div>
+              <img src="img/works/scratchRenderer/sunny_2.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext" color="#999999">16 / 16 <b>Comparison Video</b></div>
+              <video poster="" width= 100% height=100% controls preload> 
+                <source src="img/works/scratchRenderer/ComparisonVideo.mp4" media="only screen and (min-device-width: 568px)"></source> 
+              </video> 
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -235,6 +397,18 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+            <span class="dot" onclick="currentSlide(10)"></span>
+            <span class="dot" onclick="currentSlide(11)"></span>
+            <span class="dot" onclick="currentSlide(12)"></span>
+            <span class="dot" onclick="currentSlide(13)"></span>
+            <span class="dot" onclick="currentSlide(14)"></span>
+            <span class="dot" onclick="currentSlide(15)"></span>
+            <span class="dot" onclick="currentSlide(16)"></span>
           </div>
           <script>
             var slideIndex = 1;
@@ -264,80 +438,38 @@
               slides[slideIndex - 1].style.display = "block";
               dots[slideIndex - 1].className += " active";
             }
-          </script>-->
-
-        <div class="col-md-12">
-            <h3 class="text-uppercase">Rasterizer</h3>
-            <!--<h5>Time to cool down</h5>-->
-            <div class="h-30"></div>
+          </script>
+          <!-- <video poster="img/works/06.png" width= 50% height=50% controls preload> 
+            <source src="img/works/001.mp4" media="only screen and (min-device-width: 568px)"></source> 
+          </video> -->
         </div>
 
-        <div class="col-md-12">
-            <p>This is a computer graphics program implementing a 3D rasterizer that reads in a user specified scene file and renders 2D images. Implemented <u>linear expression evaluation</u>
-              (LEE), <u>hidden surface removal with z-buffering, space transformations</u> (from object to raster space), <u>color interpolation</u>, 
-              <u>texture mapping with perspective correction</u> and <u>toon shading</u>.</p>
-
-            <p>Coded in <u>Python</u> with scene files in <u>JSON</u> format. Note: The input scene files are not my own.</p>
-
-            <p>Some features are below:</p>
-        </div>
-
-        <div class="col-md-5 col-sm-4 ">
-            <h4><b><u>Flat Shading</u></b></h4>
-            <div class="h-10"></div>
-            <img src="img/works/rasterizer/flat_2.jpg" alt="" class="img-responsive" />
-            <div class="h-30"></div>
-            <h4><b><u>Gouraud Shading</u></b></h4>
-            <div class="h-10"></div>
-            <img src="img/works/rasterizer/gouraud.jpg" alt="" class="img-responsive" />
-            <div class="h-30"></div>
-            <h4><b><u>Texture Mapping</u></b></h4>
-            <div class="h-10"></div>
-            <img src="img/works/rasterizer/texmap_1.jpg" alt="" class="img-responsive" />
-          </div>
-            <div class="col-md-5 col-sm-4 ">
-            <h4><b><u>Toon Shading</u></b></h4>
-            <div class="h-10"></div>
-            <img src="img/works/rasterizer/toon.jpg" alt="" class="img-responsive" />
-            <div class="h-30"></div>
-            <h4><b><u>Phong Shading</u></b></h4>
-            <div class="h-10"></div>
-            <img src="img/works/rasterizer/phong.jpg" alt="" class="img-responsive" />
-            <div class="h-30"></div>
-            <div class="h-30"></div>
-            <div class="h-10"></div>
-            <div class="h-10"></div>
-            <img src="img/works/rasterizer/texmap_2.jpg" alt="" class="img-responsive" />
-      </div> 
-
-     <!--   <div class="col-md-3">
-            <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Design</li>
-                <li><i class="ion-ios-circle-filled"></i> consectetur adipiscing</li>
-                <li><i class="ion-ios-circle-filled"></i> et gubernationis</li>
-                <li><i class="ion-ios-circle-filled"></i> Aliter enim nosmet</li>
-            </ul>
-            <div class="h-10"></div>
-            <h4>Share</h4>
-            <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
-            </ul>
-        </div>-->
+        <!-- Basic Renderer -->
         <div class="h-30"></div>
-        <div class="col-md-9">
+        <div class="col-md-12">
           <div class="h-30"></div>
-          <h4><b><u>REFERENCES AND HELP</u></b></h4>
+          <h4><b>Base Renderer</b></h4>
 
-          <li><a href="https://danielilett.com/2019-06-01-tut2-0-lighting-models/">Toon Shading</a>
-            : Description of the components of toon shading and how to calculate them.
+          <p>To create a basic 3D rasterizer I implemented <u>linear expression evaluation</u> (LEE), 
+            <u>hidden surface removal with z-buffering, space transformations</u> (from object to raster space), <u>color interpolation</u> and 
+            <u>texture mapping with perspective correction</u>
+          </p>
+
+        </div>
+
+        <!-- Project Report-->
+        <div class="h-30"></div>
+        <div class="col-md-12">
+          <div class="h-30"></div>
+          <h4><b>More</b></h4>
+
+          <li>Read about the project and its impletation in more detail <a href="ScratchRenderer_Report.html">here.</a>
+            <p><i>Includes references and sources for the 3D scenes and models we used to create out renders.</i></p>
           </li>
-          <li><a href="https://viterbi.usc.edu/directory/faculty/Raghavachary/Saty">Prof. Saty Raghavachary</a>
-            : Associate Professor of Computer Science Practice, Viterbi School of Engineering, USC.
+          <li>Shout-out to <a href="https://viterbi.usc.edu/directory/faculty/Raghavachary/Saty">Prof. Saty Raghavachary</a>
+            for being so supportive and helping us through the project!
           </li>
-      </div>
+        </div>
 
         <div class="col-md-3">
           <div class="h-30"></div>
@@ -345,6 +477,7 @@
             
         </div>
     </div>
+  </div>
     <!-- end main-container -->
 
 
