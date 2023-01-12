@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/index.js"></script>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rashi Sinha - Portfolio - Tipsy-Woody</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        * {
+          box-sizing: border-box
+        }
+        body {
+          font-family: Verdana, sans-serif;
+          margin: 0
+        }
+        .mySlides {
+          display: none
+        }
+        img {
+          vertical-align: middle;
+        }
+        .slideshow-container {
+          max-width: 600px;
+          position: relative;
+          max-height: 600px;
+          margin: auto;
+        }
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+        }
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text */
+        .text {
+          color: #ffffff;
+          font-size: 15px;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 8px;
+          width: 100%;
+          text-align: center;
+        }
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #ffffff;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        .marginBottom {
+          margin-bottom: 20px;
+        }
+        /* The dots/bullets/indicators */
+        .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #999999;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .active,
+        .dot:hover {
+          background-color: #111111;
+        }
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+        @-webkit-keyframes fade {
+          from {
+            opacity: .4
+          }
+          to {
+            opacity: 1
+          }
+        }
+        @keyframes fade {
+          from {
+            opacity: .4
+          }
+          to {
+            opacity: 1
+          }
+        }
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .prev,
+          .next,
+          .text {
+            font-size: 11px
+          }
+        }
+      </style>
+</head>
+
+<body onload="loadConnectMe()">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="pre-container">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="index.html"><img src="img/home.png" width="40" height="40" alt="Logo"></a>
+            </div>
+            <!-- box-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
+            </a>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+        
+        <!-- nav -->
+        <nav>
+            <ul class="box-primary-nav">
+                <li class="box-label">Explore</li>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+               <!-- <li><a href="services.html">services</a></li>-->
+                <li><a href="portfolio.html">portfolio</a> <i class="bi bi-circle-fill" style="color: #ffbf00;font-size: 10px;"></i></li>
+                <!--<li><a href="contact.html">contact me</a></li>-->
+
+
+
+                <li class="box-label">Get in Touch</li>
+
+                <li class="box-social"><a href="http://www.linkedin.com/in/rashi-sinha-rs96"><i class="bi bi-linkedin"></i></a></li>
+                <li class="box-social"><a href="mailto:[rashisin@usc.edu]? subject= &body="><i class="bi bi-envelope-fill"></i></a></li>
+                <li class="box-social"><a href="resume.html"><i class="bi bi-file-pdf-fill"></i></a></li>
+               <!-- <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>-->
+            </ul>
+        </nav>
+        <!-- end nav -->
+    </div>
+    
+    <!-- top-bar -->
+    <div class="top-bar">
+        <h1>Tipsy-Woody : 3D Game</h1>
+        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Tipsy-Woody</p>
+    </div>
+    <!-- end top-bar -->
+    
+    <!-- main-container -->
+    <div class="container main-container">
+
+        <div class="col-md-12">
+            <h3 class="text-uppercase">Tipsy-Woody</h3>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="col-md-12">
+          <p>A Physics based 3D Puzzle Platformer game in which the player is on a platform in a 3D world and the player's weight can tilt the platform.
+            The platform is riddled with enemies that move due to gravity when the platform tilts. The objective of the game is to kill all the enemies
+          and clear the level as quickly as possible. </p>
+          <form action="http://play.unity.com/mg/other/cs526_playable_prototype" method="get" target="_blank">
+            <button type="submit" class="button-52" role="button">Play Game!</button>
+          </form>
+          <div class="h-30"></div>
+
+          <p>This game was designed and developed by a group of 9 people. Developed in <u>Unity</u> using <u>C#</u> for scriptable objects
+            and Unity's <u>Shader Graphs</u>, <u>VFX Graphs</u>, <u>Particle Systems</u> for materials and visual effects.</p>
+
+          <p>Most 3D assets were custom made in <u>Maya</u> and imported to Unity using <u>FBX</u>.</p> 
+
+          <p>The game was built on <u>WebGL</u> and published online.</p> 
+
+          <div class="h-30"></div>
+
+        <div>
+          <!-- Steps to Game-->
+          <h5><b>How it began</b></h5>
+          <div class="row">
+            <div class="col-md-4">
+              <p><b>Prototype based on an idea</b></p>
+              <div class="h-10"></div>
+              <img src="img/works/tipsy-woody/prototypeGIF.gif" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+            <div class="col-md-4">
+              <p><b>Prototype with all Core Mechanics</b></p>
+              <div class="h-10"></div>
+              <img src="img/works/tipsy-woody/prototype_CoreMechanics_GIF.gif" alt="" class="img-responsive" />
+              <div class="h-30"></div>
+            </div>
+          </div>
+          <!-- Gameplay Video -->
+          <h5><b>Final Game : Tipsy-Woody</b></h5>
+          <div class="row">
+            <div class="col-md-4">
+              <p><b>Gameplay video with art</b></p>
+              <div class="h-10"></div>
+              <iframe src="https://drive.google.com/file/d/11j56AU6dEJTXyTSFLDWJb-jNfLQnTsFJ/preview" width="960" height="540" allow="autoplay"></iframe>
+              <!-- <img src="img/works/scratchRenderer/sunny_0.png" alt="" class="img-responsive" />-->
+              <div class="h-30"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- My Contributions -->
+        <div class="col-md-12 ">
+          <h4><b>My Contributions to the game</b></h4>
+
+          <li>Core game mechanic : platform tilt with player movement
+          </li>
+          <li>Tile Bombs obstacle
+          </li>
+          <li>Level 11 : Level design and development
+          </li>
+          <li>UI : Tutorial clips for powerups
+          </li>
+          <li>3D model for platform tiles
+          </li>
+        </div>
+
+        <!-- More-->
+        <div class="h-30"></div>
+        <div class="col-md-12">
+          <div class="h-30"></div>
+          <h4><b>More</b></h4>
+          <li>Read more about the game: <a href="Tipsy-Woody_GDD.html">Tipsy-Woody GDD.</a>
+          </li>
+          <li>See our <u>Real-time Analytics</u> data from the game <a href="https://csci526-quasi-gamers.wl.r.appspot.com/static/home.html">here.</a>
+          </li>
+          <li>Shout-out to <a href="https://viterbi.usc.edu/directory/faculty/Easley/Scott">Prof. Scott Easely</a>
+            for being so supportive and helping us through the project!
+          </li>
+        </div>
+
+        <div class="col-md-3">
+          <div class="h-30"></div>
+            <div id="connectMe" ></div>
+            
+        </div>
+    </div>
+  </div>
+    <!-- end main-container -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <p class="copyright">© Box Portfolio 2016</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class=" glyphicon glyphicon-chevron-up"></i></a>
+    <!-- end back to top -->
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+    
+    <!-- google analytics  -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76796224-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+</body>
+
+</html>
