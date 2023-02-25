@@ -1220,3 +1220,33 @@ textarea:focus {
       padding: 13px 50px 13px;
     }
   }
+
+/* Portfolio Work Names
+==================================================*/
+
+/* CSS */
+.work_name {
+    /* margin: 0 0 5px; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+}
+
+div.work_name p {
+    margin: 5px 0px !important;
+}
+
+.img_style {
+    padding: 10px 10px 5px 10px !important;
+}
+
+.card_height {
+    max-height: 250px;
+}
+
+.card_style {
+    border: 20px solid white;
+    border-radius: 8% 8% 0% 0%;
+    background: #fff1c7;
+}
