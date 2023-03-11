@@ -161,7 +161,7 @@
        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="img/home.png" width="40" height="40" alt="Logo"></a>
+                <a href="portfolio.html"><img src="img/home.png" width="40" height="40" alt="Logo"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
@@ -174,14 +174,13 @@
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
-                <li class="box-label">Explore</li>
+                <!-- <li class="box-label">Explore</li> -->
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-               <!-- <li><a href="services.html">services</a></li>-->
                 <li><a href="portfolio.html">portfolio</a> <i class="bi bi-circle-fill" style="color: #ffbf00;font-size: 10px;"></i></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+               <!-- <li><a href="services.html">services</a></li>-->
                 <!--<li><a href="contact.html">contact me</a></li>-->
-
 
 
                 <li class="box-label">Get in Touch</li>
@@ -197,8 +196,9 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Jello Cube</h1>
-        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Jello Cube</p>
+        <h1 style="color:#696868;">Jello Cube</h1>
+        <p style="color:#3b3a3a;"> 3D Computer Animation</p>
+        <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Jello Cube</p> -->
     </div>
     <!-- end top-bar -->
     
@@ -206,82 +206,36 @@
     <div class="container main-container">
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Jello Cube (Computer Animation)</h3>
+            <h3 class="text-uppercase">Jello Cube</h3>
             <!--<h5>Time to cool down</h5>-->
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
-          <p>This program simulates a 3D elastic cube using a <u>mass spring system</u>. The 3D cube is of unit length within 2x2x2 bounding box.
-          The spring network maitains the structure of the cube and the elasticity depends on the spring constants provided in the input file.
-          The cube is contained within the bounding box with the help of <u>collision detections</u> and correcponding collision spring foces. 
-          The program also detects collisions with <u>arbitray inclined plane</u> (if present) in the scene and adds the impact of <u>external forcefield</u>
-          that varies within the bounding box.</p>
-          <p>The time-step integration can be done either by the <u>Euler</u> method or the <u>RK4</u> method.</p>
+          <div class="tagcloud">
+            <p class="tag-cloud-link">C++</p>
+            <p class="tag-cloud-link">OpenGL</p>
+          </div>
+          <div class="h-30"></div>
 
-          <p>The input file contains information about the spring constants, which integration method to use, presence of an inclined plane and the equations coefficients, 
+          <p style="color:#696868;">This program simulates a 3D elastic cube using a <b>mass spring system</b>. The 3D cube is of unit length within 2x2x2 bounding box.
+          The spring network maitains the structure of the cube and the elasticity depends on the spring constants provided in the input file.
+          The cube is contained within the bounding box with the help of <b>collision detections</b> and correcponding collision spring foces. 
+          The program also detects collisions with <b>arbitray inclined plane</b> (if present) in the scene and adds the impact of <b>external forcefield</b>
+          that varies within the bounding box.</p>
+          <p style="color:#696868;">The time-step integration can be done either by the <b>Euler</b> method or the <b>RK4</b> method.</p>
+
+          <p style="color:#696868;">The input file contains information about the spring constants, which integration method to use, presence of an inclined plane and the equations coefficients, 
             forcefield resolution, force value for each force field point, position of cube vertices and initial velocity of cube vertces.
           </p>
-
-          <p>This program was implemented in <u>C++</u> with <u>OpenGL</u>.</p> 
 
           <div class="h-30"></div>
         
         <!-- Stylized Shader-->
         <div>
-          <p><h4><b>Features and Final Animation:</b></p>
+          <p><h4 style="color:#696868;"><b>Features and Final Animation:</b></p>
           <div class="h-10"></div>
-          <!-- <h5><b>Parts of the shader</b></h5> -->
-          <!-- <div class="row">
-            <div class="col-md-4">
-              <p><b>Custom Lighting (Point lights) Quantized</b></p>
-              <p>Coded in HLSL, used in Shader Graph</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/custom_lighting_quantized.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p><b>World Space Noise (Sub-Graph)</b></p>
-              <p>Uses custom lighting value for application mask</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/ws_noise.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div> -->
-          <!-- Line Art -->
-          <!-- <h5><b>Final Game : Tipsy-Woody</b></h5> -->
-          <!-- <div class="row">
-            <div class="col-md-4">
-              <p><b>Screenspace Diamond Halftone (Sub-Graph)</b></p>
-              <p>Uses custom lighting value for application mask</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/ss_halftone.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p><b>World Space Wave (Sub-Graph)</b></p>
-              <p>Uses custom lighting value for application mask</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/ws_wave.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div>
-          <h5><b>Final Shader</b></h5> -->
-          <!-- <div class="row">
-            <div class="col-md-4">
-              <p><b>WS Noise + SS Halftone</b></p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/halftone_noise.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p><b>All parts combined with base texture</b></p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/all_shader.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div> -->
-          <h5><b>Video highlighting the program features</b></h5>
+          <!-- <h5><b>Video highlighting the program features</b></h5> -->
           <div class="row">
             <div class="col-md-12">
               <!-- <p><b>All parts combined together with base texture</b></p> -->
@@ -347,11 +301,11 @@
 
 
     <!-- footer -->
-    <footer>
+    <!-- <footer>
         <div class="container-fluid">
             <p class="copyright">© Box Portfolio 2016</p>
         </div>
-    </footer>
+    </footer> -->
     <!-- end footer -->
     
     <!-- back to top -->

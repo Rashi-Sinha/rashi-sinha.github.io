@@ -161,7 +161,7 @@
        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="img/home.png" width="40" height="40" alt="Logo"></a>
+                <a href="portfolio.html"><img src="img/home.png" width="40" height="40" alt="Logo"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
@@ -174,12 +174,11 @@
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
-                <li class="box-label">Explore</li>
-
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-               <!-- <li><a href="services.html">services</a></li>-->
+                <!-- <li class="box-label">Explore</li> -->
                 <li><a href="portfolio.html">portfolio</a> <i class="bi bi-circle-fill" style="color: #ffbf00;font-size: 10px;"></i></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+               <!-- <li><a href="services.html">services</a></li>-->
                 <!--<li><a href="contact.html">contact me</a></li>-->
 
 
@@ -197,8 +196,9 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Rasterizer</h1>
-        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Rasterizer</p>
+        <h1 style="color:#696868;">3D Rasterizer</h1>
+        <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Rasterizer</p> -->
+        <!-- <p style="color:#3b3a3a;"></p> -->
     </div>
     <!-- end top-bar -->
     
@@ -212,254 +212,256 @@
         </div>
 
         <div class="col-md-12">
-          <p>This was a group project implementing a 3D rasterizer from scratch without using any graphics libraries. The program reads in a user specified 
+          <div class="tagcloud">
+            <p class="tag-cloud-link">Python</p>
+            <p class="tag-cloud-link">JSON</p>
+          </div>
+          <div class="h-30"></div>
+
+          <p style="color:#696868;">This was a group project implementing a 3D rasterizer from scratch without using any graphics libraries. The program reads in a user specified 
             scene file and renders 2D images.</p>
 
-          <p>Coded in <u>Python</u> with input scene files in <u>JSON</u> format.</p> 
-
-          <p><b>Note:</b> We do not own any of the input 3D scenes files, texture images or background images used for creating the below rendered images.
-            The source references for all of these files can be found in the project report linked in the "More" section below.
-          </p>
-
           <div class="h-30"></div>
+
+          <div>
+              <h4 style="color:#696868;"><b>Base Renderer</b></h4>
+    
+              <p style="color:#696868;">To create a basic 3D rasterizer I implemented <b>linear expression evaluation</b> (LEE), 
+                <b>hidden surface removal with z-buffering, space transformations</b> (from object to raster space), <b>color interpolation</b> and 
+                <b>texture mapping with perspective correction</b>
+              </p>
+              <div class="h-30"></div>
+          </div>
+
+          <!-- Stylized Render -->
+          <div>
+            <p><h4 style="color:#696868;"><b>Stylized Rendering Features:</b></p>
+            <div class="h-10"></div>
+            <!-- Toon Shading -->
+            <h5><b>1. Toon Shading</b></h5>
+            <div class="row">
+              <div class="col-md-4">
+                <p style="color:#696868;">Basic Render</p>
+                <div class="h-10"></div>
+                <img src="img/works/scratchRenderer/jinx_0.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-4">
+                <p style="color:#696868;">Toon Shaded Render</p>
+                <div class="h-10"></div>
+                <img src="img/works/scratchRenderer/jinx_2.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+            </div>
+            <!-- Line Art -->
+            <h5><b>2. Line Art</b></h5>
+            <div class="row">
+              <div class="col-md-4">
+                <p style="color:#696868;">Basic Render</p>
+                <div class="h-10"></div>
+                <img src="img/works/scratchRenderer/sunny_0.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-4">
+                <p style="color:#696868;">Line Art Render</p>
+                <div class="h-10"></div>
+                <img src="img/works/scratchRenderer/sunny_3.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+            </div>
+            <!-- Halftone Shading-->
+            <h5><b>3. Halftone Shading</b></h5>
+            <div class="row">
+              <div class="col-md-4">
+                <p style="color:#696868;">Basic Render</p>
+                <div class="h-10"></div>
+                <img src="img/works/scratchRenderer/teapot_0.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-4">
+                <p style="color:#696868;">Halftone Shaded Render</p>
+                <div class="h-10"></div>
+                <img src="img/works/scratchRenderer/teapot_1.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Other Features -->
+          <div class="h-30"></div>
+          <div class="col-md-12 ">
+            <h4 style="color:#696868;"><b>Other Features:</b></h4>
+            <p style="color:#696868;">Wireframes, Screen Space Ambient Occlusion, Shadows and Normal Mapping.</p>
+            <div class="h-30"></div>
+          </div>
         
+          <!-- Render Showcase -->
+          <div class="col-md-12" >
+            <h4 style="color:#696868;"><b>Render Showcase</b></h4>
 
-        <!-- Stylized Render -->
-        <div>
-          <p><h4><b>Stylized Rendering Features:</b></p>
-          <div class="h-10"></div>
-          <!-- Toon Shading -->
-          <h5><b>1. Toon Shading</b></h5>
-          <div class="row">
-            <div class="col-md-4">
-              <p>Basic Render</p>
-              <div class="h-10"></div>
-              <img src="img/works/scratchRenderer/jinx_0.png" alt="" class="img-responsive" />
-              <div class="h-30"></div>
+            <!-- SLIDESHOW -->
+            <div class="slideshow-container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 16 <b>Hollow Knight:</b> Basic Render</div>
+                <img src="img/works/scratchRenderer/hollowKnight_0.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">2 / 16 <b>Hollow Knight:</b> Toon Shading</div>
+                <img src="img/works/scratchRenderer/hollowKnight_2.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">3 / 16 <b>Hollow Knight:</b> Line Art</div>
+                <img src="img/works/scratchRenderer/hollowKnight_4.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">4 / 16 <b>Hollow Knight:</b> Halftone Shading</div>
+                <img src="img/works/scratchRenderer/hollowKnight_3.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">5 / 16 <b>Hollow Knight:</b> Wireframe</div>
+                <img src="img/works/scratchRenderer/hollowKnight_1.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">6 / 16 <b>Artorias:</b> Basic Render</div>
+                <img src="img/works/scratchRenderer/artorias_0.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">7 / 16 <b>Artorias:</b> Ambient Occlusion, Shadows & Normal Mapping</div>
+                <img src="img/works/scratchRenderer/artorias_1.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">8 / 16 <b>Jinx:</b> Ambient Occlusion, Shadows & Normal Mapping</div>
+                <img src="img/works/scratchRenderer/jinx_1.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">9 / 16 <b>Jinx:</b> Line Art</div>
+                <img src="img/works/scratchRenderer/jinx_4.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">10 / 16 <b>Jinx:</b> Halftone Shading</div>
+                <img src="img/works/scratchRenderer/jinx_3.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">11 / 16 <b>Jinx:</b> Wireframe</div>
+                <img src="img/works/scratchRenderer/jinx_5.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">12 / 16 <b>Luffy:</b> Basic Render</div>
+                <img src="img/works/scratchRenderer/luffy_0.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">13 / 16 <b>Luffy:</b> Toon Shading</div>
+                <img src="img/works/scratchRenderer/luffy_1.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">14 / 16 <b>Sunny:</b> Toon Shading</div>
+                <img src="img/works/scratchRenderer/sunny_1.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext" color="#999999">15 / 16 <b>Sunny:</b> Wireframe</div>
+                <img src="img/works/scratchRenderer/sunny_2.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext" color="#999999">16 / 16 <b>Comparison Video</b></div>
+                <video poster="" width= 100% height=100% controls preload> 
+                  <source src="img/works/scratchRenderer/ComparisonVideo.mp4" media="only screen and (min-device-width: 568px)"></source> 
+                </video> 
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <div class="col-md-4">
-              <p>Toon Shaded Render</p>
-              <div class="h-10"></div>
-              <img src="img/works/scratchRenderer/jinx_2.png" alt="" class="img-responsive" />
-              <div class="h-30"></div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+              <span class="dot" onclick="currentSlide(8)"></span>
+              <span class="dot" onclick="currentSlide(9)"></span>
+              <span class="dot" onclick="currentSlide(10)"></span>
+              <span class="dot" onclick="currentSlide(11)"></span>
+              <span class="dot" onclick="currentSlide(12)"></span>
+              <span class="dot" onclick="currentSlide(13)"></span>
+              <span class="dot" onclick="currentSlide(14)"></span>
+              <span class="dot" onclick="currentSlide(15)"></span>
+              <span class="dot" onclick="currentSlide(16)"></span>
             </div>
-          </div>
-          <!-- Line Art -->
-          <h5><b>2. Line Art</b></h5>
-          <div class="row">
-            <div class="col-md-4">
-              <p>Basic Render</p>
-              <div class="h-10"></div>
-              <img src="img/works/scratchRenderer/sunny_0.png" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p>Line Art Render</p>
-              <div class="h-10"></div>
-              <img src="img/works/scratchRenderer/sunny_3.png" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div>
-          <!-- Halftone Shading-->
-          <h5><b>3. Halftone Shading</b></h5>
-          <div class="row">
-            <div class="col-md-4">
-              <p>Basic Render</p>
-              <div class="h-10"></div>
-              <img src="img/works/scratchRenderer/teapot_0.png" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p>Halftone Shaded Render</p>
-              <div class="h-10"></div>
-              <img src="img/works/scratchRenderer/teapot_1.png" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Other Features -->
-        <div class="h-30"></div>
-        <div class="col-md-12 ">
-          <h4><b>Other Features:</b></h4>
-          <p>Wireframes, Screen Space Ambient Occlusion, Shadows and Normal Mapping.</p>
-        </div>
-
-        <!-- Team members -->
-        <div class="col-md-12 marginBottom">
-          <h4><b>Team Members & Contributions</b></h4>
-
-          <li><a href="https://www.linkedin.com/in/shravan-kumar-sk5/">Shravan Kumar</a>
-            : Screen space ambient occlusion and 3D mesh compatibility with rasterizer.
-          </li>
-          <li>
-            <!-- <a href="cilento@usc.edu">Luiz Cilento</a> -->
-            Luiz Cilento: Shadows
-          </li>
-          <li>
-            <!-- <a href="yaorongx@usc.edu">Yaorong Xie</a> -->
-            Yaorong Xie: Normal Mapping
-          </li>
-          <li>Rashi Sinha (Me)
-            : Wireframes and Stylized Rendering
-          </li>
-        </div>
-        
-        <!-- Render Showcase -->
-        <div class="col-md-12" >
-          <h4><b>Render Showcase</b></h4>
-
-          <!-- SLIDESHOW -->
-          <div class="slideshow-container">
-            <div class="mySlides">
-              <div class="numbertext">1 / 16 <b>Hollow Knight:</b> Basic Render</div>
-              <img src="img/works/scratchRenderer/hollowKnight_0.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">2 / 16 <b>Hollow Knight:</b> Toon Shading</div>
-              <img src="img/works/scratchRenderer/hollowKnight_2.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">3 / 16 <b>Hollow Knight:</b> Line Art</div>
-              <img src="img/works/scratchRenderer/hollowKnight_4.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">4 / 16 <b>Hollow Knight:</b> Halftone Shading</div>
-              <img src="img/works/scratchRenderer/hollowKnight_3.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">5 / 16 <b>Hollow Knight:</b> Wireframe</div>
-              <img src="img/works/scratchRenderer/hollowKnight_1.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">6 / 16 <b>Artorias:</b> Basic Render</div>
-              <img src="img/works/scratchRenderer/artorias_0.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">7 / 16 <b>Artorias:</b> Ambient Occlusion, Shadows & Normal Mapping</div>
-              <img src="img/works/scratchRenderer/artorias_1.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">8 / 16 <b>Jinx:</b> Ambient Occlusion, Shadows & Normal Mapping</div>
-              <img src="img/works/scratchRenderer/jinx_1.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">9 / 16 <b>Jinx:</b> Line Art</div>
-              <img src="img/works/scratchRenderer/jinx_4.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">10 / 16 <b>Jinx:</b> Halftone Shading</div>
-              <img src="img/works/scratchRenderer/jinx_3.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">11 / 16 <b>Jinx:</b> Wireframe</div>
-              <img src="img/works/scratchRenderer/jinx_5.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">12 / 16 <b>Luffy:</b> Basic Render</div>
-              <img src="img/works/scratchRenderer/luffy_0.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">13 / 16 <b>Luffy:</b> Toon Shading</div>
-              <img src="img/works/scratchRenderer/luffy_1.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext">14 / 16 <b>Sunny:</b> Toon Shading</div>
-              <img src="img/works/scratchRenderer/sunny_1.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext" color="#999999">15 / 16 <b>Sunny:</b> Wireframe</div>
-              <img src="img/works/scratchRenderer/sunny_2.png" style="width:100%">
-            </div>
-            <div class="mySlides">
-              <div class="numbertext" color="#999999">16 / 16 <b>Comparison Video</b></div>
-              <video poster="" width= 100% height=100% controls preload> 
-                <source src="img/works/scratchRenderer/ComparisonVideo.mp4" media="only screen and (min-device-width: 568px)"></source> 
-              </video> 
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-            <span class="dot" onclick="currentSlide(10)"></span>
-            <span class="dot" onclick="currentSlide(11)"></span>
-            <span class="dot" onclick="currentSlide(12)"></span>
-            <span class="dot" onclick="currentSlide(13)"></span>
-            <span class="dot" onclick="currentSlide(14)"></span>
-            <span class="dot" onclick="currentSlide(15)"></span>
-            <span class="dot" onclick="currentSlide(16)"></span>
-          </div>
-          <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              if(n > slides.length) {
-                slideIndex = 1
+            <script>
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
               }
-              if(n < 1) {
-                slideIndex = slides.length
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
               }
-              for(i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if(n > slides.length) {
+                  slideIndex = 1
+                }
+                if(n < 1) {
+                  slideIndex = slides.length
+                }
+                for(i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for(i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
               }
-              for(i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
-            }
-          </script>
+            </script>
           <!-- <video poster="img/works/06.png" width= 50% height=50% controls preload> 
             <source src="img/works/001.mp4" media="only screen and (min-device-width: 568px)"></source> 
           </video> -->
+          <!-- Team members -->
+          <div class="col-md-12 marginBottom">
+            <div class="h-30"></div>
+            <h4 style="color:#696868;"><b>Team Members & Contributions</b></h4>
+            <li style="color:#696868;">Rashi Sinha (Me)
+              : Wireframes and Stylized Rendering
+            </li>
+            <li style="color:#696868;">Shravan Kumar
+              : Screen space ambient occlusion and 3D mesh compatibility with rasterizer.
+            </li>
+            <li style="color:#696868;">
+              <!-- <a href="cilento@usc.edu">Luiz Cilento</a> -->
+              Luiz Cilento: Shadows
+            </li>
+            <li style="color:#696868;">
+              <!-- <a href="yaorongx@usc.edu">Yaorong Xie</a> -->
+              Yaorong Xie: Normal Mapping
+            </li>
+          </div>
+
+           <!-- Project Report-->
+          <div class="col-md-12">
+            <div class="h-30"></div>
+            <h4 style="color:#696868;"><b>More</b></h4>
+  
+            <li style="color:#696868;">Read about the project and its impletation in more detail <a href="ScratchRenderer_Report.html">here.</a>
+              <p><i>Includes references and sources for the 3D scenes and models we used to create out renders.</i></p>
+            </li>
+            <li style="color:#696868;">Shout-out to <a href="https://viterbi.usc.edu/directory/faculty/Raghavachary/Saty">Prof. Saty Raghavachary</a>
+              for being so supportive and helping us through the project!
+            </li>
+            <div class="h-30"></div>
+            <p style="color:#696868;"><b>Note:</b> We do not own any of the input 3D scenes files, texture images or background images used for creating the above rendered images.
+              The source references for all of these files can be found in the project report linked in the "More" section below.
+            </p>
+          </div>
+
         </div>
 
-        <!-- Basic Renderer -->
-        <div class="h-30"></div>
-        <div class="col-md-12">
-          <div class="h-30"></div>
-          <h4><b>Base Renderer</b></h4>
-
-          <p>To create a basic 3D rasterizer I implemented <u>linear expression evaluation</u> (LEE), 
-            <u>hidden surface removal with z-buffering, space transformations</u> (from object to raster space), <u>color interpolation</u> and 
-            <u>texture mapping with perspective correction</u>
-          </p>
-
-        </div>
-
-        <!-- Project Report-->
-        <div class="h-30"></div>
-        <div class="col-md-12">
-          <div class="h-30"></div>
-          <h4><b>More</b></h4>
-
-          <li>Read about the project and its impletation in more detail <a href="ScratchRenderer_Report.html">here.</a>
-            <p><i>Includes references and sources for the 3D scenes and models we used to create out renders.</i></p>
-          </li>
-          <li>Shout-out to <a href="https://viterbi.usc.edu/directory/faculty/Raghavachary/Saty">Prof. Saty Raghavachary</a>
-            for being so supportive and helping us through the project!
-          </li>
-        </div>
+        
 
         <div class="col-md-3">
           <div class="h-30"></div>
@@ -472,11 +474,11 @@
 
 
     <!-- footer -->
-    <footer>
+    <!-- <footer>
         <div class="container-fluid">
             <p class="copyright">© Box Portfolio 2016</p>
         </div>
-    </footer>
+    </footer> -->
     <!-- end footer -->
     
     <!-- back to top -->

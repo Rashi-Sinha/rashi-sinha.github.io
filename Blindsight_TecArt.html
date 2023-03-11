@@ -161,7 +161,7 @@
        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
-                <a href="index.html"><img src="img/home.png" width="40" height="40" alt="Logo"></a>
+                <a href="portfolio.html"><img src="img/home.png" width="40" height="40" alt="Logo"></a>
             </div>
             <!-- box-nav -->
             <a class="box-primary-nav-trigger" href="#0">
@@ -174,12 +174,12 @@
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
-                <li class="box-label">Explore</li>
+                <!-- <li class="box-label">Explore</li> -->
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-               <!-- <li><a href="services.html">services</a></li>-->
                 <li><a href="portfolio.html">portfolio</a> <i class="bi bi-circle-fill" style="color: #ffbf00;font-size: 10px;"></i></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+               <!-- <li><a href="services.html">services</a></li>-->
                 <!--<li><a href="contact.html">contact me</a></li>-->
 
 
@@ -197,8 +197,9 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1>Blindsight 3D Game : Tech Art</h1>
-        <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Blindsight : Tech Art</p>
+        <h1 style="color:#696868;">Blindsight</h1>
+        <p style="color:#3b3a3a;"> 3D Game (Technical Artist)</p>
+        <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Blindsight : Tech Art</p> -->
     </div>
     <!-- end top-bar -->
     
@@ -212,33 +213,42 @@
         </div>
 
         <div class="col-md-12">
-          <p>A 3D third-person combat game in which the player is a blind martial artist with echolocation abilities.</p>
-          <p>My contribution as a <u>Tech Artist</u> in the team was to create a stylized <u>manga-like environment shader</u> for the scenes in the game that
-          uses custom lighting from echolocation as a light source. Developed in <u>Unity</u> using <u>C#</u> for scriptable objects, <u>HLSL</u> for 
-          custom lighting and Unity's <u>Shader Graphs</u>, <u>VFX Graphs</u>, <u>Particle Systems</u> for materials and visual effects.</p>
 
-          <p>This project is being developed by a team of students as part of the <u>USC Games AGP</u> course.</p>
+          <div class="tagcloud">
+            <p class="tag-cloud-link">Unity 3D</p>
+            <p class="tag-cloud-link">C#</p>
+            <p class="tag-cloud-link">HLSL</p>
+            <p class="tag-cloud-link">URP Shader Graphs</p>
+            <p class="tag-cloud-link">VFX Graphs</p>
+            <p class="tag-cloud-link">Particle Systems</p>
+          </div>
+          <div class="h-30"></div>
+          
+          <p style="color: #696868;">A 3D third-person combat game in which the player is a blind martial artist with echolocation abilities.</p>
+          <p style="color: #696868;">My contribution as a <b>Tech Artist</b> in the team was to create a stylized <b>manga-like environment shader</b> for the scenes in the game that
+          uses custom lighting from echolocation as a light source. The project involved implementing scriptable objects and writing shader code for
+          custom lighting that was used for materials and visual effects.</p>
 
-          <p><b>Note:</b> The environment shader was made based off of the concept art designed by the Art Director of the project team.</p> 
+          <p style="color: #696868;">This project is being developed by a team of students as part of the <b>USC Games AGP</b> course.</p>
 
           <div class="h-30"></div>
         
 
         <!-- Stylized Shader-->
         <div>
-          <p><h4><b>Stylized Manga-like Environment Shader:</b></p>
+          <p><h4 style="color: #696868;"><b>Stylized Manga-like Environment Shader:</b></p>
           <div class="h-10"></div>
           <h5><b>Parts of the shader</b></h5>
           <div class="row">
             <div class="col-md-4">
-              <p><b>Custom Lighting (Point lights) Quantized</b></p>
+              <p style="color: #696868;"><b>Custom Lighting (Point lights) Quantized</b></p>
               <p>Coded in HLSL, used in Shader Graph</p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/custom_lighting_quantized.jpg" alt="" class="img-responsive" />
               <div class="h-30"></div>
             </div>
             <div class="col-md-4">
-              <p><b>World Space Noise (Sub-Graph)</b></p>
+              <p style="color: #696868;"><b>World Space Noise (Sub-Graph)</b></p>
               <p>Uses custom lighting value for application mask</p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/ws_noise.jpg" alt="" class="img-responsive" />
@@ -249,14 +259,14 @@
           <!-- <h5><b>Final Game : Tipsy-Woody</b></h5> -->
           <div class="row">
             <div class="col-md-4">
-              <p><b>Screenspace Diamond Halftone (Sub-Graph)</b></p>
+              <p style="color: #696868;"><b>Screenspace Diamond Halftone (Sub-Graph)</b></p>
               <p>Uses custom lighting value for application mask</p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/ss_halftone.jpg" alt="" class="img-responsive" />
               <div class="h-30"></div>
             </div>
             <div class="col-md-4">
-              <p><b>World Space Wave (Sub-Graph)</b></p>
+              <p style="color: #696868;"><b>World Space Wave (Sub-Graph)</b></p>
               <p>Uses custom lighting value for application mask</p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/ws_wave.jpg" alt="" class="img-responsive" />
@@ -266,13 +276,13 @@
           <h5><b>Final Shader</b></h5>
           <div class="row">
             <div class="col-md-4">
-              <p><b>WS Noise + SS Halftone</b></p>
+              <p style="color: #696868;"><b>WS Noise + SS Halftone</b></p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/halftone_noise.jpg" alt="" class="img-responsive" />
               <div class="h-30"></div>
             </div>
             <div class="col-md-4">
-              <p><b>All parts combined with base texture</b></p>
+              <p style="color: #696868;"><b>All parts combined with base texture</b></p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/all_shader.jpg" alt="" class="img-responsive" />
               <div class="h-30"></div>
@@ -299,38 +309,33 @@
 
         <!-- Other Contributions -->
         <div>
-          <p><h4><b>Other Contributions : Visual Effects</b></p>
+          <p><h4 style="color: #696868;"><b>Visual Effects</b></p>
           <div class="h-10"></div>
           <h5><b>VFX for End of Semester State of the Game</b></h5>
           <div class="row">
             <div class="col-md-4">
-              <p><b>Onomatopoeia for Combat Hit</b></p>
+              <p style="color: #696868;"><b>Onomatopoeia for Combat Hit</b></p>
               <p>Created with Particle Systems</p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/VFX_Onmpt.gif" alt="" class="img-responsive" />
               <div class="h-30"></div>
             </div>
             <div class="col-md-4">
-              <p><b>Amulet Unleash</b></p>
+              <p style="color: #696868;"><b>Amulet Unleash</b></p>
               <p>Created with VFX Graphs & C# scripts</p>
               <div class="h-10"></div>
               <img src="img/works/blindsight/VFX_AmuletUnleash.gif" alt="" class="img-responsive" />
               <div class="h-30"></div>
             </div>
           </div>
+
+          <p style="color: #696868;"><b>Note:</b> The environment shader was made based off of the concept art designed by the Art Director of the project team.</p> 
         </div>
 
         <!-- Project Report-->
         <!-- <div class="h-30"></div>
         <div class="col-md-12">
           <div class="h-30"></div>
-          <h4><b>More</b></h4>
-
-          <li>See our <u>Real-time Analytics</u> data from the game <a href="https://csci526-quasi-gamers.wl.r.appspot.com/static/home.html">here.</a>
-          </li>
-          <li>Shout-out to <a href="https://viterbi.usc.edu/directory/faculty/Easley/Scott">Prof. Scott Easely</a>
-            for being so supportive and helping us through the project!
-          </li>
         </div> -->
 
         <div class="col-md-3">
@@ -344,11 +349,11 @@
 
 
     <!-- footer -->
-    <footer>
+    <!-- <footer>
         <div class="container-fluid">
             <p class="copyright">© Box Portfolio 2016</p>
         </div>
-    </footer>
+    </footer> -->
     <!-- end footer -->
     
     <!-- back to top -->
