@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/index.js"></script>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Rashi Sinha - Portfolio - Jello Cube</title>
+    <title>Rashi Sinha - Portfolio - Inverse Kinematics</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
     
     <!-- Bootstrap -->
@@ -196,7 +196,7 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1 style="color:#696868;">Jello Cube</h1>
+        <h1 style="color:#696868;">Inverse Kinematics</h1>
         <p style="color:#3b3a3a;"> 3D Computer Animation</p>
         <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Jello Cube</p> -->
     </div>
@@ -206,7 +206,7 @@
     <div class="container main-container">
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Jello Cube</h3>
+            <h3 class="text-uppercase">Inverse Kinematics with Skinning</h3>
             <!--<h5>Time to cool down</h5>-->
             <div class="h-30"></div>
         </div>
@@ -214,33 +214,31 @@
         <div class="col-md-12">
           <div class="tagcloud">
             <p class="tag-cloud-link">C++</p>
+            <p class="tag-cloud-link">Eigen</p>
+            <p class="tag-cloud-link">ADOL-C</p>
             <p class="tag-cloud-link">OpenGL</p>
           </div>
           <div class="h-30"></div>
 
-          <p style="color:#696868;">This program simulates a 3D elastic cube using a <b>mass spring system</b>. The 3D cube is of unit length within 2x2x2 bounding box.
-          The spring network maitains the structure of the cube and the elasticity depends on the spring constants provided in the input file.
-          The cube is contained within the bounding box with the help of <b>collision detections</b> and correcponding collision spring foces. 
-          The program also detects collisions with <b>arbitray inclined plane</b> (if present) in the scene and adds the impact of <b>external forcefield</b>
-          that varies within the bounding box.</p>
-          <p style="color:#696868;">The time-step integration can be done either by the <b>Euler</b> method or the <b>RK4</b> method.</p>
-
-          <p style="color:#696868;">The input file contains information about the spring constants, which integration method to use, presence of an inclined plane and the equations coefficients, 
-            forcefield resolution, force value for each force field point, position of cube vertices and initial velocity of cube vertces.
+          <p style="color:#696868;">This program takes in a 3D rigged character and implements <b>Forward Kinematics</b>, 
+            <b>Tikhonov Regularization</b> method for inverse kinematics, <b>Linear Blend Skinning</b> and <b>Dual Quaternion Skinning</b>.
+          It is an interactive application where the user can pull on the IK handles and the joint angles and the character mesh moves accordingly.
+          </p>
+          <p style="color:#696868;">Eigen library is used to solve large systems of linear equations and ADOL-C is used to solve for Jacobian matrix for IK.
           </p>
 
           <div class="h-30"></div>
         
         <!-- Stylized Shader-->
         <div>
-          <p><h4 style="color:#696868;"><b>Features and Final Animation:</b></p>
+          <p><h4 style="color:#696868;"><b>Demo:</b></p>
           <div class="h-10"></div>
           <!-- <h5><b>Video highlighting the program features</b></h5> -->
           <div class="row">
             <div class="col-md-12">
               <!-- <p><b>All parts combined together with base texture</b></p> -->
               <div class="h-10"></div>
-              <iframe src="https://drive.google.com/file/d/1bZ7gj7trK_JlbjowmuSmenq-6CNL9Mpv/preview" width="853.333333333" height="480" allow="autoplay"></iframe>
+              <iframe src="https://drive.google.com/file/d/1Rdm1FY0MzK4k3_YuCquFhG83ttLDDtqd/preview" width="960" height="540" allow="autoplay"></iframe>
               <div class="h-30"></div>
             </div>
           </div>
