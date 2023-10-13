@@ -14,7 +14,7 @@ $(window).load(function () {
     //  isotope
     var $container = $('.portfolio_container');
     $container.isotope({
-        filter: '*',
+        filter: '.All',
     });
 
     $('.portfolio_filter a').click(function () {
