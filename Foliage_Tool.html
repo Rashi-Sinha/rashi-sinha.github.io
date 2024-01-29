@@ -222,7 +222,7 @@
           <p style="color:#696868;">This is a Houdini Digital Asset that allows artists to procedurally generate foliage (grass,bushes)
             to populate environments.
             <div class="h-30"></div>
-            <iframe src="https://drive.google.com/file/d/1NjdfnN7kxU1-UPXSumh6KBUFfufGlAxO/preview" width="960" height="540" allow="autoplay" allowfullscreen></iframe>
+            <iframe src="https://drive.google.com/file/d/1lNIPKOGnVQt4pd4ERCTAIrRsVPV6O9GE/preview" width="960" height="540" allow="autoplay" allowfullscreen></iframe>
           </p>
 
           <div class="h-30"></div>
@@ -231,7 +231,8 @@
           <div>
             <p><h4 style="color:#696868;"><b>Steps:</b></p>
             <div class="h-10"></div>
-            <!-- Toon Shading -->
+
+            <!-- Curves -->
             <h5><b>1. Curves</b></h5>
             <div class="row">
               <div class="col-md-5">
@@ -258,7 +259,7 @@
                 angles based on the driver's value.</p>
               </div>
             </div>
-            <!-- Line Art -->
+            <!-- High Poly Geometry -->
             <h5><b>2. Adding Geometry</b></h5>
             <div class="row">
               <div class="col-md-4">
@@ -290,23 +291,23 @@
                    and normal are generated for it.</p>
               </div>
             </div>
-            <!-- Halftone Shading-->
+            <!-- Color -->
             <h5><b>3. Adding Color</b></h5>
             <div class="row">
               <div class="col-md-4">
-                <p style="color:#696868;">Basic Render</p>
+                <!-- <p style="color:#696868;">Basic Render</p> -->
                 <div class="h-10"></div>
                 <img src="img/works/foliage/col_1.png" alt="" class="img-responsive" />
                 <div class="h-30"></div>
               </div>
               <div class="col-md-4">
-                <p style="color:#696868;">Halftone Shaded Render</p>
+                <!-- <p style="color:#696868;">Halftone Shaded Render</p> -->
                 <div class="h-10"></div>
                 <img src="img/works/foliage/col_2.png" alt="" class="img-responsive" />
                 <div class="h-30"></div>
               </div>
               <div class="col-md-4">
-                <p style="color:#696868;">Halftone Shaded Render</p>
+                <!-- <p style="color:#696868;">Halftone Shaded Render</p> -->
                 <div class="h-10"></div>
                 <img src="img/works/foliage/col_3.png" alt="" class="img-responsive" />
                 <div class="h-30"></div>
@@ -322,96 +323,144 @@
                 The maps baker node is used for this feature.</p>
               </div>
             </div>
+
+            <!-- Bundle -->
+            <h5><b>4. Bundle Design</b></h5>
+            <div class="row">
+              <div class="col-md-4">
+                <!-- <p style="color:#696868;">Basic Render</p> -->
+                <div class="h-10"></div>
+                <img src="img/works/foliage/bun_1.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-4">
+                <!-- <p style="color:#696868;">Halftone Shaded Render</p> -->
+                <div class="h-10"></div>
+                <img src="img/works/foliage/bun_2.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-4">
+                <!-- <p style="color:#696868;">Halftone Shaded Render</p> -->
+                <div class="h-10"></div>
+                <img src="img/works/foliage/bun_3.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-12">
+                <p style="color:#696868;">Once the design of the asset is complete, it's needed to design the distribution of the asset in order to populate
+                 the environment. A simple circle is used as a guide to place all parts of the bundle. Using remesh followed by a point wrangle, the distance of 
+                point is calculated and normalized between 0 & 1. This normalized attribute is utilized to define a ramp for desity. Points are then scattered on 
+                the circle based on this density. Similarly, the same normalized attribute is used to define a ramp for scaling these points. Finally, the low-poly 
+                planes created before are copied over to all these points and they inherit their scale.  </p>
+                <p style="color:#696868;">The last step is to get define some normals for all cards in the bundle which is transferred over from a geometry that 
+                covers the bundle. The source geometry is created using a line. Defining a ramp to control the line's Y position and using revolve to create 
+                polygon from it around the bundle. The normal then generates normals for this new geometry and the attribute transfer node is used to transfer these 
+                normals to the primitives in the bundle.</p>
+                <p style="color:#696868;">Now, the bundle geometry can be exported and imported as an asset into a game engine. With proper shader, material and 
+                high resolution texture maps the asset can look like a bundle of grass (or other variations) and be used to populate the environment. </p>
+                <p style="color:#696868;">Note: I am working on the apprentice version of Houdini, which has limitations on export. The texture maps I exported 
+                are not the best resolution and they also have a watermark. So the below results are not super sharp. But they're still a pretty good depiction of 
+                can be achieved through this tool :) </p>
+              </div>
+              <div class="col-md-6">
+                <!-- <p style="color:#696868;">Basic Render</p> -->
+                <div class="h-10"></div>
+                <img src="img/works/foliage/uni_1.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-6">
+                <!-- <p style="color:#696868;">Halftone Shaded Render</p> -->
+                <div class="h-10"></div>
+                <img src="img/works/foliage/uni_2.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+            </div>
           </div>
         
           <!-- Render Showcase -->
-          <div class="col-md-12" >
-            <h4 style="color:#696868;"><b>Rendered Variations</b></h4>
+          <h4 style="color:#696868;"><b>Rendered Variations</b></h4>
 
-            <!-- SLIDESHOW -->
-            <div class="slideshow-container">
-              <div class="mySlides">
-                <div class="numbertext">1 / 9 <b>Grass:</b> Basic Render</div>
-                <img src="img/works/foliage/renders/grass_1.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">2 / 9 <b>Grass:</b> With Lighting</div>
-                <img src="img/works/foliage/renders/grass_2.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">3 / 9 <b>Seaweed:</b> Basic Render</div>
-                <img src="img/works/foliage/renders/seaweed_1.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">4 / 9 <b>Seaweed:</b> With Lighting</div>
-                <img src="img/works/foliage/renders/seaweed_3.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">5 / 9 <b>Leafy Bush:</b> Basic Render</div>
-                <img src="img/works/foliage/renders/leaves_1.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">6 / 9 <b>Leafy Bush:</b> With Lighting</div>
-                <img src="img/works/foliage/renders/leaves_3.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">7 / 9 <b>Fantast Color Palette:</b> Basic Render</div>
-                <img src="img/works/foliage/renders/fantasy_1.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">8 / 9 <b>Fantast Color Palette:</b> With Lighting</div>
-                <img src="img/works/foliage/renders/fantasy_2.jpg" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">9 / 9 <b>Fantast Color Palette:</b> With Lighting</div>
-                <img src="img/works/foliage/renders/fantasy_3.jpg" style="width:100%">
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <!-- SLIDESHOW -->
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 9 <b>Grass:</b> Basic Render</div>
+              <img src="img/works/foliage/renders/grass_1.jpg" style="width:100%">
             </div>
-            <br>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
-              <span class="dot" onclick="currentSlide(5)"></span>
-              <span class="dot" onclick="currentSlide(6)"></span>
-              <span class="dot" onclick="currentSlide(7)"></span>
-              <span class="dot" onclick="currentSlide(8)"></span>
-              <span class="dot" onclick="currentSlide(9)"></span>
+            <div class="mySlides">
+              <div class="numbertext">2 / 9 <b>Grass:</b> With Lighting</div>
+              <img src="img/works/foliage/renders/grass_2.jpg" style="width:100%">
             </div>
-            <script>
-              var slideIndex = 1;
-              showSlides(slideIndex);
-              function plusSlides(n) {
-                showSlides(slideIndex += n);
-              }
-              function currentSlide(n) {
-                showSlides(slideIndex = n);
-              }
-              function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if(n > slides.length) {
-                  slideIndex = 1
-                }
-                if(n < 1) {
-                  slideIndex = slides.length
-                }
-                for(i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
-                }
-                for(i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-              }
-            </script>
-
+            <div class="mySlides">
+              <div class="numbertext">3 / 9 <b>Seaweed:</b> Basic Render</div>
+              <img src="img/works/foliage/renders/seaweed_1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">4 / 9 <b>Seaweed:</b> With Lighting</div>
+              <img src="img/works/foliage/renders/seaweed_3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 9 <b>Leafy Bush:</b> Basic Render</div>
+              <img src="img/works/foliage/renders/leaves_1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 9 <b>Leafy Bush:</b> With Lighting</div>
+              <img src="img/works/foliage/renders/leaves_3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 9 <b>Fantasy Color Palette:</b> Basic Render</div>
+              <img src="img/works/foliage/renders/fantasy_1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 9 <b>Fantasy Color Palette:</b> With Lighting</div>
+              <img src="img/works/foliage/renders/fantasy_2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9 / 9 <b>Fantasy Color Palette:</b> With Lighting</div>
+              <img src="img/works/foliage/renders/fantasy_3.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+          </div>
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if(n > slides.length) {
+                slideIndex = 1
+              }
+              if(n < 1) {
+                slideIndex = slides.length
+              }
+              for(i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for(i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+          </script>
 
         
 
