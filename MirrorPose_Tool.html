@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/index.js"></script>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Rashi Sinha - Portfolio - Character Rigs</title>
+    <title>Rashi Sinha - Portfolio - Mirror Pose</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
     
     <!-- Bootstrap -->
@@ -43,9 +43,9 @@
           vertical-align: middle;
         }
         .slideshow-container {
-          max-width: 600px;
+          max-width: 700px;
           position: relative;
-          max-height: 600px;
+          max-height: 700px;
           margin: auto;
         }
         /* Next & previous buttons */
@@ -86,7 +86,7 @@
         }
         /* Number text (1/3 etc) */
         .numbertext {
-          color: #ffffff;
+          color: #000000;
           font-size: 12px;
           padding: 8px 12px;
           position: absolute;
@@ -196,9 +196,9 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1 style="color:#696868;">Charater Rigs</h1>
+        <h1 style="color:#696868;">Mirror Pose Tool</h1>
         <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Rasterizer</p> -->
-        <p style="color:#3b3a3a;"><a href="portfolio_art.html" style="color:#3b3a3a;">Rigs & Artwork</a> / 3D Character Rigs</p>
+        <p style="color:#3b3a3a;"><a href="portfolio_tools.html" style="color:#3b3a3a;">Tools</a> / Python Tool for Maya</p>
     </div>
     <!-- end top-bar -->
     
@@ -206,109 +206,115 @@
     <div class="container main-container">
 
         <div class="col-md-12">
-            <h3 class="text-uppercase">Character Rigs</h3>
+            <h3 class="text-uppercase">Mirror Pose Tool (WIP)</h3>
             <!--<h5>Time to cool down</h5>-->
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
           <div class="tagcloud">
-            <p class="tag-cloud-link">Maya</p>
-            <p class="tag-cloud-link">Custom Rigs</p>
-            <p class="tag-cloud-link">Advanced Skeleton Tool Rigs</p>
+            <p class="tag-cloud-link">Autodesk Maya 2026</p>
+            <p class="tag-cloud-link">Python</p>
+            <p class="tag-cloud-link">Tool Development</p>
           </div>
           <div class="h-30"></div>
 
-          <p style="color:#696868;">Some character rigs I worked on as part of my part-time lecturer work at USC teaching how to 
-            make clean, animator-friendly custom rigs including complex systems like IKFK switching, set driven keys, expressions, blendshapes 
-            and constraints as well as using auto-rigging tools like Advanced Skeleton.
+          <p style="color:#696868;">I've been working on a custom Python tool for Autodesk Maya that mirrors character poses across the YZ plane 
+            —  designed to speed up animation workflows and support a variety of rig setups. It's still a work in progress, so I'm sharing what I've got so far . . .
+
+            <br>
+            While more advanced tools exist, I built this lightweight version to address a specific need I ran into while animating a walk cycle for 
+            a Technical Animation for Games class I am teaching. I wanted something accessible, simple and flexible — and that became the motivation behind this project.
+
+            <br>
+
+            Check out the demo and feature details below!
+            <br>
+            <div class="h-30"></div>
+            <iframe src="https://drive.google.com/file/d/1NCbJIiTrq9O8SV0eLmg2HhAlO0-4ibw1/preview" width="960" height="540" allow="autoplay" allowfullscreen></iframe>
           </p>
 
           <div class="h-30"></div>
 
-          <!-- Rigs Showcase -->
+          <!-- Details -->
+          <div>
+            <!-- <p><h4 style="color:#696868;"><b>Details:</b></p> -->
+            <div class="h-10"></div>
 
-          <h4 style="color:#696868;"><b>Rigs Showcase</b></h4>
-          <div class="col-md-12" >
+            <!-- Curves -->
+            <h5><b>Tool Features</b></h5>
+            <div class="row">
+              <!-- <div class="col-md-4">
+                <div class="h-10"></div>
+                  <img src="img/works/tweenMachine/tweenMachine_DAG.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-4">
+                <div class="h-10"></div>
+                <img src="img/works/tweenMachine/tweenMachine_animCurve.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div>
+              <div class="col-md-4">
+                <div class="h-10"></div>
+                <img src="img/works/tweenMachine/tweenMachine_error.png" alt="" class="img-responsive" />
+                <div class="h-30"></div>
+              </div> -->
+              <div class="col-md-12">
+                <p style="color:#696868;">Current Features: 
+                  <ol type="1">
+                    <li style="color:#696868;">Mirrors a pose across the YZ Plane.
+                      <br>
+                      For middle/center controls, it simply inverts the transformations.
+                      <br>
+                      For left/right controls (like legs), it swaps the transformations between left and right sides.
+                    </li>
+                    <li style="color:#696868;">Works on selected controls, allowing precise and non-destructive use.
+                    </li>
+                    <li style="color:#696868;">Compatible with a variety of rig setups via flexible naming convention support (e.g., L_, Left, _L).
+                    </li>
+                  </ol>
+                  <br>
+                </p>
 
-            <!-- SLIDESHOW -->
-            <div class="slideshow-container">
-              <div class="mySlides">
-                <div class="numbertext">1 / 6 <b>Doozy:</b> Custom Rig (Model from Mixamo)</div>
-                <img src="img/works/rigs/doozy_anim.gif" style="width:100%">
+
+                <p style="color:#696868;">Still in Progress:
+                  <ol type="1">
+                    <li style="color:#696868;">Working on refining mirroring logic for hand/arm controls.
+                    </li>
+                  </ol>
+
+                </p>
               </div>
-              <div class="mySlides">
-                <div class="numbertext">2 / 6 <b>Goblin:</b> Custom Rig</div>
-                <img src="img/works/rigs/goblin_rig_anim.gif" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">3 / 6 <b>Smithers Head:</b> Custom Rig</div>
-                <img src="img/works/rigs/smithers_head_anim.gif" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">4 / 6 <b>Centaur:</b> Custom Rig</div>
-                <img src="img/works/rigs/centaur_rig_anim.gif" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">5 / 6 <b>Unniyarcha:</b> Advanced Skeleton Rig with Custom Systems</div>
-                <img src="img/works/rigs/Unniyarcha_anim.gif" style="width:100%">
-              </div>
-              <div class="mySlides">
-                <div class="numbertext">6 / 6 <b>Dragon:</b> Advanced Skeleton Rig (model by Rahul Mehta)</div>
-                <img src="img/works/rigs/dragon_rig_anim.gif" style="width:100%">
-              </div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <br>
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-              <span class="dot" onclick="currentSlide(4)"></span>
-              <span class="dot" onclick="currentSlide(5)"></span>
-              <span class="dot" onclick="currentSlide(6)"></span>
-            </div>
-            <script>
-              var slideIndex = 1;
-              showSlides(slideIndex);
-              function plusSlides(n) {
-                showSlides(slideIndex += n);
-              }
-              function currentSlide(n) {
-                showSlides(slideIndex = n);
-              }
-              function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if(n > slides.length) {
-                  slideIndex = 1
-                }
-                if(n < 1) {
-                  slideIndex = slides.length
-                }
-                for(i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";
-                }
-                for(i = 0; i < dots.length; i++) {
-                  dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-              }
-            </script>
-
-        </div>
-
-        
-
-        <div class="col-md-3">
-          <div class="h-30"></div>
-            <div id="connectMe" ></div>
             
-        </div>
-    </div>
+            <h5><b>Potential enhancements:</b></h5>
+            <div class="row">
+              <!-- <div class="h-10"></div>
+              <div style="display:flex; justify-content: center;">
+                  <img src="img/works/tweenMachine/tweenMachine_UI.png" alt="" class="img-responsive" width="30%" height="auto" />
+              </div>
+              <div class="h-30"></div> -->
+              <div class="col-md-12 ">
+                <p style="color:#696868;">
+                  <ol type="1">
+                    <li style="color:#696868;">Support mirroring across other planes.
+                    </li>
+                    <li style="color:#696868;">Add intuitive UI for mirror axis selections. 
+                    </li>
+                    
+                  </ol>
+                </p>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="h-30"></div>
+              <div id="connectMe" ></div>
+              
+          </div>
+      </div>
   </div>
     <!-- end main-container -->
 
