@@ -84,55 +84,40 @@
         <p style="color:#3b3a3a;">Software Developer / Graphics Engineer / Technical Artist</p>
     </div>
     <!-- end top bar -->
-
     <!-- main container -->
-    <div class="main-container portfolio-inner clearfix">
+    <div class="main-container portfolio-inner clearfix" id="category-row">
         <!-- portfolio div -->
         <div class="portfolio-div">
             <div class="portfolio">
-                <!-- portfolio_filter -->
-                <!-- <div class="categories-grid wow fadeInLeft">
-                    <nav class="categories text-center">
-                        <ul class="portfolio_filter">
-                            <li><a href="" class="active" data-filter="*">All</a></li>
-                            <li><a href="" data-filter=".CG">CG</a></li>
-                            <li><a href="" data-filter=".3D">3D</a></li>
-                            <li><a href="" data-filter=".2D">2D</a></li>
-                            <li><a href="" data-filter=".Animation">Animation</a></li>
-                            <li><a href="" data-filter=".Game">Game</a></li>
-                        </ul>
-                    </nav>
-                </div> -->
-                <!-- portfolio_filter -->
 
                 <!-- portfolio_container -->
                 <div class="no-padding portfolio_container clearfix">
 
                     <!-- single work -->
-                    <div class="col-md-4 col-sm-6 All card_style">
-                        <div onclick = "location.href='portfolio_tech.html'" class="portfolio_item card_height">
-                            <!-- <img src="img/works/jello_cube_img.jpg" alt="image" class="img-responsive img_style" /> -->
-                            <img src="img/works/jelly_thumbnail.gif" alt="image" class="img-responsive img_style" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Technical Work</span>
-                                        <!-- <em>CG/3D/Animation</em> -->
+                        <!-- main grid card -->
+                        <div class="col-md-4 col-sm-6 All card_style" data-target="tech-grid">
+                            <div class="portfolio_item card_height ">
+                                <img src="img/works/jelly_thumbnail.gif" alt="image" class="img-responsive img_style" />
+                                <div class="portfolio_item_hover">
+                                    <div class="portfolio-border clearfix">
+                                        <div class="item_info">
+                                            <span>Technical Work</span>
+                                            <!-- <em>CG/3D/Animation</em> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="work_name">
+                                <p>Technical Work</p>
+                            </div>
                         </div>
-                        <div class="work_name">
-                            <p>Technical Work</p>
-                        </div>
-                        <!-- </a> -->
-                    </div>
                     <!-- end single work -->
-                     
+                    
+                    
                     <!-- single work -->
-                    <div class="col-md-4 col-sm-6 All card_style">
+                    <div class="col-md-4 col-sm-6 All card_style" data-target="tools-grid">
                         <!-- <div onclick = "location.href='resume.html'" class="portfolio_item card_height"> -->
-                        <div onclick = "location.href='portfolio_tools.html'" class="portfolio_item card_height">
+                        <div class="portfolio_item card_height">
                             <img src="img/works/gerstnerWave/gerstnerWave_Gif_thumbnail.gif" alt="image" class="img-responsive img_style" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
@@ -142,7 +127,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- </a> -->
                         </div>
                         <div class="work_name">
                             <p>Tools / Plug-ins</p>
@@ -153,8 +137,8 @@
 
                     <!-- single work -->
                 
-                    <div class="col-md-4 col-sm-6 All card_style">
-                        <div onclick = "location.href='portfolio_art.html'" class="portfolio_item card_height">
+                    <div class="col-md-4 col-sm-6 All card_style" > <!--data-target="art-grid"> -->
+                        <div onclick = "location.href='rigs_3Dart.html'" class="portfolio_item card_height">
                             <img src="img/works/rigs_thumbnail.jpg" alt="image" class="img-responsive img_style" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
@@ -173,16 +157,481 @@
                     
                     <!-- end single work -->
 
-
                 </div>
                 <!-- end portfolio_container -->
+                
             </div>
-            <!-- portfolio -->
         </div>
         <!-- end portfolio div -->
         
     </div>
     <!-- end main container -->
+
+    <!-- TECH expandable_container -->
+    <div class="container expandable-grid hidden-grid" id="tech-grid">
+        <!-- single work -->
+        <div class="col-md-4 col-sm-6 All card_style">
+            <div onclick = "location.href='MocapInterp.html'" class="portfolio_item card_height">
+                <img src="img/works/mocap.png" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Mocap Interpolation</span>
+                            <em>Animation</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work_name">
+                <p>Mocap Interpolation</p>
+            </div>
+        </div>
+        <!-- end single work -->
+
+        <!-- single work -->
+    
+        <div class="col-md-4 col-sm-6 All card_style">
+            <div onclick = "location.href='Rasterizer.html'" class="portfolio_item card_height">
+                <!-- <a href="Rasterizer.html" class="portfolio_item"> -->
+                <img src="img/works/scratchRenderer/thumbnail_03.jpg" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Rasterizer</span>
+                            <em>Rendering</em>
+                        </div>
+                    </div>
+                </div>
+                <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Rasterizer</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All card_style">
+            <div onclick = "location.href='JelloCube.html'" class="portfolio_item card_height">
+                <img src="img/works/jello_cube_img.jpg" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Jello Cube</span>
+                            <em>Animation</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work_name">
+                <p>Jello Cube</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All card_style">
+            <div onclick = "location.href='InverseKinematics.html'" class="portfolio_item card_height">
+                <img src="img/works/ik.png" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Inverse Kinematics</span>
+                            <em>Animation</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work_name">
+                <p>Inverse Kinematics</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All card_style">
+            <div onclick = "location.href='Blindsight_TecArt.html'" class="portfolio_item card_height">
+                <img src="img/works/blindsight/thumbnail.jpeg" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Blindsight (Tech Art)</span>
+                            <em>Game</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </a> -->
+            <div class="work_name">
+                <p>Blindsight (Tech Art)</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        <div class="col-md-4 col-sm-6 All card_style">
+            <!-- <a href="Raytracer.html" class="portfolio_item"> -->
+            <div onclick = "location.href='Raytracer.html'" class="portfolio_item card_height">
+                <!--<img src="img/works/03.jpg" alt="image" class="img-responsive" />-->
+                <img src="img/works/rt/002.jpg" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Raytracer</span>
+                            <em>Rendering</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="work_name">
+                <p>Raytracer</p>
+            </div>
+            <!-- </a> -->
+        </div>
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All card_style">
+            <div onclick = "location.href='Tipsy-Woody.html'" class="portfolio_item card_height">
+                <img src="img/works/tipsy-woody/thumbnail.png" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Tipsy-Woody</span>
+                            <em>Game</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Tipsy-Woody</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        <div class="col-md-4 col-sm-6 All card_style">
+            <!-- <a href="Roller Coaster.html" class="portfolio_item"> -->
+            <div onclick = "location.href='Roller Coaster.html'" class="portfolio_item card_height">
+                <img src="img/works/11_1.png" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Roller Coaster</span>
+                            <em>Animation</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Roller Coaster</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All card_style">
+            <!-- <a href="HeightField.html" class="portfolio_item"> -->
+            <div onclick = "location.href='HeightField.html'" class="portfolio_item card_height">
+                <img src="img/works/10_1.jpg" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>HeightField</span>
+                            <!-- <em>CG/Animation</em> -->
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>HeightField</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 Learning card_style">
+            <!-- <a href="HeightField.html" class="portfolio_item"> -->
+            <div onclick = "location.href='Houdini_learning.html'" class="portfolio_item card_height">
+                <img src="img/works/houdini_thumbnail.jpeg" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Houdini</span>
+                            <em>Learning Journey</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Houdini Learning Journey</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+    </div>
+    <!-- end TECH expandable_container -->
+
+    <!-- TOOLS expandable_container -->
+    <div class="container expandable-grid hidden-grid" id="tools-grid">
+
+        <!-- single work -->
+        <div class="col-md-4 col-sm-6 All Tools card_style">
+            <div onclick = "location.href='MirrorPose_Tool.html'" class="portfolio_item card_height">
+                <img src="img/works/mirrorPose/thumbnail.png" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Mirror Pose</span>
+                            <em>Maya Tool</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Mirror Pose Tool (WIP)</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All Tools card_style">
+            <div onclick = "location.href='gWave_Tool.html'" class="portfolio_item card_height">
+                <img src="img/works/gerstnerWave/gerstnerWave_Gif_thumbnail.gif" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Gerstner Wave Deformer</span>
+                            <em>Maya Plugin</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Gerstner Wave Deformer Tool</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All Tools card_style">
+            <div onclick = "location.href='tweenMachine_Tool.html'" class="portfolio_item card_height">
+                <img src="img/works/tweenMachine/tweenMachine_gif_thumbnail.gif" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Tween Machine</span>
+                            <em>Maya Command Plugin</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Tween Machine Tool</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All Tools card_style">
+            <!-- <a href="HeightField.html" class="portfolio_item"> -->
+            <div onclick = "location.href='Foliage_Tool.html'" class="portfolio_item card_height">
+                <img src="img/works/foliage/thumbnail_2.gif" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Foliage Generation Tool</span>
+                            <em>Houdini</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Procedural Foliage Generation Tool</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+        <!-- single work -->
+        
+        <div class="col-md-4 col-sm-6 All Tools card_style">
+            <!-- <a href="HeightField.html" class="portfolio_item"> -->
+            <div onclick = "location.href='ProcTerrainMaya.html'" class="portfolio_item card_height">
+                <img src="img/works/ProcTerr.png" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Procedural Terrain Generation</span>
+                            <em>Maya Tool</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Procedural Terrain Generation Tool</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
+
+    </div>
+    <!-- end TOOLS expandable_container -->
+
+
+    <!-- TOOLS expandable_container -->
+    <div class="container expandable-grid hidden-grid" id="art-grid">
+        <!-- <div class="col-md-12"> -->
+            <div class="masonry-grid masonry-wrapper">
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/rigs/doozy_anim.gif">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Doozy: Custom Rig in Maya (Model from Mixamo)</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/electricVfx/thumbnail.gif" alt="electric Vfx" />
+                    <!-- <figcaption>Electric Charge VFX (Unity)</figcaption> -->
+                    <div class="caption">Electric Charge VFX (Unity)</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/rigs/centaur_rig_anim.gif">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Centaur: Custom Rig in Maya</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <video src="img/works/004.mp4" controls poster="img/works/12_1.jpg" autoplay loop muted playsinline></video>
+                    <!-- <figcaption>Drive (Maya)</figcaption> -->
+                    <div class="caption">Drive (Short Animation in Maya)</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/rigs/smithers_head_anim.gif">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Smithers Head: Custom Rig in Maya</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <video src="img/works/001.mp4" controls poster="img/works/06.png" autoplay loop muted playsinline></video>
+                    <!-- <figcaption>Paranormal (Blender)</figcaption> -->
+                    <div class="caption">Paranormal (Short Animation in Blender)</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/Living_Room-WIP.png">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Living Room (Blender)</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/rigs/goblin_rig_anim.gif">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Goblin: Custom Rig in Maya</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/demon.png">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Demon Head (Blender)</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/rigs/dragon_rig_anim.gif">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Dragon: Advanced Skeleton Rig (model by Rahul Mehta)</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+                <!-- single item -->
+                <div class="masonry-item">
+                    <div class="media-wrapper">
+                    <img src="img/works/rigs/Unniyarcha_anim.gif">
+                    <!-- <figcaption>Living Room (Blender)</figcaption> -->
+                    <div class="caption">Unniyarcha: Advanced Skeleton Rig with Custom Systems</div>
+                    </div>
+                </div>
+                <!-- end single item -->
+
+
+                <!-- more -->
+            </div>
+
+      </div>
+        
+
+    </div>
+    <!-- end TOOLS expandable_container -->
 
 
     <!-- footer -->
@@ -213,6 +662,8 @@
 
     <!--  custom script -->
     <script src="js/custom.js"></script>
+    <script src="js/subgrid.js"></script>
+    
     
     <!-- google analytics  -->
     <script>

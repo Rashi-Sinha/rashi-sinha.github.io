@@ -28,120 +28,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        * {
-          box-sizing: border-box
-        }
-        body {
-          font-family: Verdana, sans-serif;
-          margin: 0
-        }
-        .mySlides {
-          display: none
-        }
-        img {
-          vertical-align: middle;
-        }
-        .slideshow-container {
-          max-width: 700px;
-          position: relative;
-          max-height: 700px;
-          margin: auto;
-        }
-        /* Next & previous buttons */
-        .prev,
-        .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* Caption text */
-        .text {
-          color: #ffffff;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #000000;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        .marginBottom {
-          margin-bottom: 20px;
-        }
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #999999;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        .active,
-        .dot:hover {
-          background-color: #111111;
-        }
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 1.5s;
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-          from {
-            opacity: .4
-          }
-          to {
-            opacity: 1
-          }
-        }
-        @keyframes fade {
-          from {
-            opacity: .4
-          }
-          to {
-            opacity: 1
-          }
-        }
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev,
-          .next,
-          .text {
-            font-size: 11px
-          }
-        }
-      </style>
 </head>
 
 <body onload="loadConnectMe()">
@@ -198,134 +84,145 @@
     <div class="top-bar">
         <h1 style="color:#696868;">Mirror Pose Tool</h1>
         <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Rasterizer</p> -->
-        <p style="color:#3b3a3a;"><a href="portfolio_tools.html" style="color:#3b3a3a;">Tools</a> / Python Tool for Maya</p>
+        <p style="color:#3b3a3a;">Tools / Python Tool for Maya</p>
     </div>
     <!-- end top-bar -->
-    
+
     <!-- main-container -->
     <div class="container main-container">
-
-        <div class="col-md-12">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-12">
             <h3 class="text-uppercase">Mirror Pose Tool (WIP)</h3>
             <!--<h5>Time to cool down</h5>-->
             <div class="h-30"></div>
-        </div>
-
-        <div class="col-md-12">
-          <div class="tagcloud">
-            <p class="tag-cloud-link">Autodesk Maya 2026</p>
-            <p class="tag-cloud-link">Python</p>
-            <p class="tag-cloud-link">Tool Development</p>
           </div>
-          <div class="h-30"></div>
-
-          <p style="color:#696868;">I've been working on a custom Python tool for Autodesk Maya that mirrors character poses across the YZ plane 
+          <div class="col-md-5">
+            <div class="tagcloud">
+              <p class="tag-cloud-link">Autodesk Maya 2026</p>
+              <p class="tag-cloud-link">Python</p>
+              <p class="tag-cloud-link">Tool Development</p>
+            </div>
+            <div class="h-30"></div>
+            <p style="color:#696868;">I've been working on a custom Python tool for Autodesk Maya that <b>mirrors character poses across the YZ plane</b> 
             —  designed to speed up animation workflows and support a variety of rig setups. It's still a work in progress, so I'm sharing what I've got so far . . .
 
             <br>
             While more advanced tools exist, I built this lightweight version to address a specific need I ran into while animating a walk cycle for 
             a Technical Animation for Games class I am teaching. I wanted something accessible, simple and flexible — and that became the motivation behind this project.
 
-            <br>
-
-            Check out the demo and feature details below!
-            <br>
-            <div class="h-30"></div>
-            <iframe src="https://drive.google.com/file/d/1NCbJIiTrq9O8SV0eLmg2HhAlO0-4ibw1/preview" width="960" height="540" allow="autoplay" allowfullscreen></iframe>
-          </p>
-
-          <div class="h-30"></div>
-
-          <!-- Details -->
-          <div>
-            <!-- <p><h4 style="color:#696868;"><b>Details:</b></p> -->
-            <div class="h-10"></div>
-
-            <!-- Curves -->
-            <h5><b>Tool Features</b></h5>
-            <div class="row">
-              <!-- <div class="col-md-4">
-                <div class="h-10"></div>
-                  <img src="img/works/tweenMachine/tweenMachine_DAG.png" alt="" class="img-responsive" />
-                <div class="h-30"></div>
-              </div>
-              <div class="col-md-4">
-                <div class="h-10"></div>
-                <img src="img/works/tweenMachine/tweenMachine_animCurve.png" alt="" class="img-responsive" />
-                <div class="h-30"></div>
-              </div>
-              <div class="col-md-4">
-                <div class="h-10"></div>
-                <img src="img/works/tweenMachine/tweenMachine_error.png" alt="" class="img-responsive" />
-                <div class="h-30"></div>
-              </div> -->
-              <div class="col-md-12">
-                <p style="color:#696868;">Current Features: 
-                  <ol type="1">
-                    <li style="color:#696868;">Mirrors a pose across the YZ Plane.
-                      <br>
-                      For middle/center controls, it simply inverts the transformations.
-                      <br>
-                      For left/right controls (like legs), it swaps the transformations between left and right sides.
-                    </li>
-                    <li style="color:#696868;">Works on selected controls, allowing precise and non-destructive use.
-                    </li>
-                    <li style="color:#696868;">Compatible with a variety of rig setups via flexible naming convention support (e.g., L_, Left, _L).
-                    </li>
-                  </ol>
-                  <br>
-                </p>
-
-
-                <p style="color:#696868;">Still in Progress:
-                  <ol type="1">
-                    <li style="color:#696868;">Working on refining mirroring logic for hand/arm controls.
-                    </li>
-                  </ol>
-
-                </p>
-              </div>
-            </div>
+            </p>
+          </div>
+        
+          <div class="col-md-7" style="text-align: center;">
+            <iframe src="https://drive.google.com/file/d/1NCbJIiTrq9O8SV0eLmg2HhAlO0-4ibw1/preview" width="100%" height="360" allow="autoplay" allowfullscreen style="border-radius: 10px;"></iframe>
             
-            <h5><b>Potential enhancements:</b></h5>
-            <div class="row">
-              <!-- <div class="h-10"></div>
-              <div style="display:flex; justify-content: center;">
-                  <img src="img/works/tweenMachine/tweenMachine_UI.png" alt="" class="img-responsive" width="30%" height="auto" />
+            <h5 style="color:#696868;"><b>Tool Demo</b></h5>
+            <div class="h-30"></div>
+          </div>
+        </div>
+
+        <div class="h-10"></div>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <!-- <div id="expand-click" class="hoverElement">
+              <div data-target="read-more">
+                <h4 style="color:#696868;">
+                  <label class="arrow-label">
+                    <input type="checkbox">
+                    <span class="arrow"></span>
+                  </label>
+
+                  <b> Implementation Details:</b> To create a deformer node, the plugin extends the MPxDeformerNode class...
+                </h4> -->
+                <!-- Right Arrow Unicode &#8594; -->
+              <!-- </div>
+            </div>
+            <div class="h-30"></div> -->
+
+            <!-- add hidden-section class for expandable to work -->
+            <div id="read-more" class="expandable-section"> 
+              <!-- Deformer Node-->
+              <div class="row">
+                <!-- <div class="col-md-6" style="text-align: center; justify-content: center;">
+                  <div style="margin-top: 10px;">
+                    <img src="img/works/gerstnerWave/gwave_node.png" alt="" width="60%" height="auto" style=" border-radius: 8px;" />
+                    <div class="h-10"></div>
+                    <h5 style="color:#696868;"><b>Node Attributes (Art Directable Controls)</b></h5>
+                  </div>
+                </div> -->
+
+                <div class="col-md-6">
+                  <div >
+                    <h4 style="color:#696868;"><b>Current Tool Features: </b></h4>
+                    <div style="margin-right: 16px">
+                      <p style="color:#696868;">
+                        <ol type="1">
+                          <li style="color:#696868;">Mirrors a pose across the YZ Plane.
+                            <br>
+                            For middle/center controls, it simply inverts the transformations.
+                            <br>
+                            For left/right controls (like legs), it swaps the transformations between left and right sides.
+                          </li>
+                          <li style="color:#696868;">Works on selected controls, allowing precise and non-destructive use.
+                          </li>
+                          <li style="color:#696868;">Compatible with a variety of rig setups via flexible naming convention support (e.g., L_, Left, _L).
+                          </li>
+                        </ol>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div >
+                    <h4 style="color:#696868;"><b>Still in Progress:</b></h4>
+                    <div >
+                      <p style="color:#696868;">
+                        <ol type="1">
+                          <li style="color:#696868;">Working on refining mirroring logic for hand/arm controls.
+                          </li>
+                        </ol>
+                      </p>
+                    </div>
+                    <div class="h-10"></div>
+                    <h4 style="color:#696868;"><b>Potential enhancements:</b></h4>
+                    <div >
+                      <p style="color:#696868;">
+                        <ol type="1">
+                          <li style="color:#696868;">Support mirroring across other planes.
+                          </li>
+                          <li style="color:#696868;">Add intuitive UI for mirror axis selections. 
+                          </li>
+                        </ol>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <div class="h-30"></div> -->
-              <div class="col-md-12 ">
-                <p style="color:#696868;">
-                  <ol type="1">
-                    <li style="color:#696868;">Support mirroring across other planes.
-                    </li>
-                    <li style="color:#696868;">Add intuitive UI for mirror axis selections. 
-                    </li>
-                    
-                  </ol>
-                </p>
-                
-              </div>
+
+              <div class="h-30"></div>
+
+              
             </div>
           </div>
+        </div>
 
-          <div class="col-md-3">
-            <div class="h-30"></div>
-              <div id="connectMe" ></div>
-              
-          </div>
+
+
       </div>
-  </div>
+    </div>
     <!-- end main-container -->
 
-
     <!-- footer -->
-    <!-- <footer>
-        <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
-        </div>
-    </footer> -->
+    <footer>
+            <div class="h-30"></div>
+            <div id="connectMe" ></div>
+    </footer>
     <!-- end footer -->
+
     
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class=" glyphicon glyphicon-chevron-up"></i></a>
@@ -341,6 +238,9 @@
     <script src="js/menu.js"></script>
     <script src="js/animated-headline.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/hover.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/expand.js"></script>
 
 
     <!--  custom script -->

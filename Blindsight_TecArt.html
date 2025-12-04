@@ -28,120 +28,6 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <style>
-        * {
-          box-sizing: border-box
-        }
-        body {
-          font-family: Verdana, sans-serif;
-          margin: 0
-        }
-        .mySlides {
-          display: none
-        }
-        img {
-          vertical-align: middle;
-        }
-        .slideshow-container {
-          max-width: 600px;
-          position: relative;
-          max-height: 600px;
-          margin: auto;
-        }
-        /* Next & previous buttons */
-        .prev,
-        .next {
-          cursor: pointer;
-          position: absolute;
-          top: 50%;
-          width: auto;
-          padding: 16px;
-          margin-top: -22px;
-          color: white;
-          font-weight: bold;
-          font-size: 18px;
-          transition: 0.6s ease;
-          border-radius: 0 3px 3px 0;
-          user-select: none;
-        }
-        /* Position the "next button" to the right */
-        .next {
-          right: 0;
-          border-radius: 3px 0 0 3px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-          background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* Caption text */
-        .text {
-          color: #ffffff;
-          font-size: 15px;
-          padding: 8px 12px;
-          position: absolute;
-          bottom: 8px;
-          width: 100%;
-          text-align: center;
-        }
-        /* Number text (1/3 etc) */
-        .numbertext {
-          color: #ffffff;
-          font-size: 12px;
-          padding: 8px 12px;
-          position: absolute;
-          top: 0;
-        }
-        .marginBottom {
-          margin-bottom: 20px;
-        }
-        /* The dots/bullets/indicators */
-        .dot {
-          cursor: pointer;
-          height: 15px;
-          width: 15px;
-          margin: 0 2px;
-          background-color: #999999;
-          border-radius: 50%;
-          display: inline-block;
-          transition: background-color 0.6s ease;
-        }
-        .active,
-        .dot:hover {
-          background-color: #111111;
-        }
-        /* Fading animation */
-        .fade {
-          -webkit-animation-name: fade;
-          -webkit-animation-duration: 1.5s;
-          animation-name: fade;
-          animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-          from {
-            opacity: .4
-          }
-          to {
-            opacity: 1
-          }
-        }
-        @keyframes fade {
-          from {
-            opacity: .4
-          }
-          to {
-            opacity: 1
-          }
-        }
-        /* On smaller screens, decrease text size */
-        @media only screen and (max-width: 300px) {
-          .prev,
-          .next,
-          .text {
-            font-size: 11px
-          }
-        }
-      </style>
 </head>
 
 <body onload="loadConnectMe()">
@@ -175,21 +61,15 @@
         <nav>
             <ul class="box-primary-nav">
                 <!-- <li class="box-label">Explore</li> -->
-
                 <li><a href="portfolio.html">portfolio</a> <i class="bi bi-circle-fill" style="color: #ffbf00;font-size: 10px;"></i></li>
                 <li><a href="about.html">About me</a></li>
                 <li><a href="resume.html">Resume</a></li>
-               <!-- <li><a href="services.html">services</a></li>-->
-                <!--<li><a href="contact.html">contact me</a></li>-->
-
-
 
                 <li class="box-label">Get in Touch</li>
 
                 <li class="box-social"><a href="http://www.linkedin.com/in/rashi-sinha-rs96"><i class="bi bi-linkedin"></i></a></li>
                 <li class="box-social"><a href="mailto:[rashisin@usc.edu]? subject= &body="><i class="bi bi-envelope-fill"></i></a></li>
                 <li class="box-social"><a href="resume.html"><i class="bi bi-file-pdf-fill"></i></a></li>
-               <!-- <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>-->
             </ul>
         </nav>
         <!-- end nav -->
@@ -198,168 +78,177 @@
     <!-- top-bar -->
     <div class="top-bar">
         <h1 style="color:#696868;">Blindsight</h1>
-        <p style="color:#3b3a3a;"> <a href="portfolio_tech.html" style="color:#3b3a3a;">Technical Work</a> / Blindsight: 3D Game (Technical Artist)</p>
-        <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Blindsight : Tech Art</p> -->
+        <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Rasterizer</p> -->
+        <p style="color:#3b3a3a;">Technical Work / Blindsight: 3D Game (Technical Artist)</p>
     </div>
     <!-- end top-bar -->
     
     <!-- main-container -->
     <div class="container main-container">
-
-        <div class="col-md-12">
-            <h3 class="text-uppercase">Blindsight: War of The Wardens (Tech Art)</h3>
-            <!--<h5>Time to cool down</h5>-->
-            <div class="h-30"></div>
-        </div>
-
-        <div class="col-md-12">
-
-          <div class="tagcloud">
-            <p class="tag-cloud-link">Unity 3D</p>
-            <p class="tag-cloud-link">C#</p>
-            <p class="tag-cloud-link">HLSL</p>
-            <p class="tag-cloud-link">URP Shader Graphs</p>
-            <p class="tag-cloud-link">VFX Graphs</p>
-            <p class="tag-cloud-link">Particle Systems</p>
-          </div>
-          <div class="h-30"></div>
+        <div class = "col-md-12">
           
-          <p style="color: #696868;">A 3D third-person combat game in which the player is a blind martial artist with echolocation abilities.</p>
-          <p style="color: #696868;">My contribution as a <b>Tech Artist</b> in the team was to create a stylized <b>manga-like environment shader</b> for the scenes in the game that
-          uses custom lighting from echolocation as a light source. The project involved implementing scriptable objects and writing shader code for
-          custom lighting that was used for materials and visual effects.</p>
-
-          <p style="color: #696868;">This project was developed by a team of students as part of the <b>USC Games AGP</b> course.</p>
-
-          <div class="h-30"></div>
-
-          <form action="https://store.steampowered.com/app/2187370/Blindsight_War_of_the_Wardens/" method="get" target="_blank">
-            <button type="submit" class="button-52" role="button">Play Game!</button>
-          </form>
-
-          <div class="h-30"></div>
-        
-
-        <!-- Stylized Shader-->
-        <div>
-          <p><h4 style="color: #696868;"><b>Stylized Manga-like Environment Shader:</b></p>
-          <div class="h-10"></div>
-          <h5><b>Final Shader In Game</b></h5>
           <div class="row">
             <div class="col-md-12">
-              <!-- <p><b>All parts combined together with base texture</b></p> -->
-              <div class="h-10"></div>
-              <iframe src="https://drive.google.com/file/d/1_Ft6gJ3GhY9YrqYqWgpOP4gG2J6hwA4o/preview" width="640" height="360" allow="autoplay"></iframe><!-- <img src="img/works/scratchRenderer/sunny_0.png" alt="" class="img-responsive" /> -->
+              <h3 class="text-uppercase">Blindsight: War of The Wardens (Tech Art)</h3>
+              <!--<h5>Time to cool down</h5>-->
               <div class="h-30"></div>
             </div>
-          </div>
-        </div>
-          <h5><b>Shader Breakdown</b></h5>
-          <div class="row">
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>Custom Lighting (Point lights) Quantized</b></p>
-              <p>Coded in HLSL, used in Shader Graph</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/custom_lighting_quantized.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>World Space Noise (Sub-Graph)</b></p>
-              <p>Uses custom lighting value for application mask</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/ws_noise.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div>
-          <!-- Line Art -->
-          <!-- <h5><b>Final Game : Tipsy-Woody</b></h5> -->
-          <div class="row">
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>Screenspace Diamond Halftone (Sub-Graph)</b></p>
-              <p>Uses custom lighting value for application mask</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/ss_halftone.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>World Space Wave (Sub-Graph)</b></p>
-              <p>Uses custom lighting value for application mask</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/ws_wave.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div>
-          <h5><b>Final Shader</b></h5>
-          <div class="row">
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>WS Noise + SS Halftone</b></p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/halftone_noise.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>All parts combined with base texture</b></p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/all_shader.jpg" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div>
+            <div class="col-md-6">
+              <div class="tagcloud">
+                <p class="tag-cloud-link">Unity 3D</p>
+                <p class="tag-cloud-link">C#</p>
+                <p class="tag-cloud-link">HLSL</p>
+                <p class="tag-cloud-link">URP Shader Graphs</p>
+                <p class="tag-cloud-link">VFX Graphs</p>
+                <p class="tag-cloud-link">Particle Systems</p>
+              </div>
+            <div class="h-30"></div>
+            <p style="color: #696868;">A 3D third-person combat game in which the player is a blind martial artist with echolocation abilities.</p>
+            <p style="color: #696868;">My contribution as a <b>Technical Artist</b> in the team was to create a stylized <b>manga-inspired environment shader</b> for the scenes in the game that
+            uses custom lighting from echolocation as a light source. The project involved writing custom shader code, implementing scriptable objects for art-directable controls, 
+            designing shader graphs and creating combat visual effects.</p>
 
-
-        <!-- Other Contributions -->
-        <div>
-          <p><h4 style="color: #696868;"><b>Visual Effects</b></p>
-          <div class="h-10"></div>
-          <h5><b>VFX for End of Semester State of the Game</b></h5>
-          <div class="row">
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>Onomatopoeia for Combat Hit</b></p>
-              <p>Created with Particle Systems</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/VFX_Onmpt.gif" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-            <div class="col-md-4">
-              <p style="color: #696868;"><b>Amulet Unleash</b></p>
-              <p>Created with VFX Graphs & C# scripts</p>
-              <div class="h-10"></div>
-              <img src="img/works/blindsight/VFX_AmuletUnleash.gif" alt="" class="img-responsive" />
-              <div class="h-30"></div>
-            </div>
-          </div>
-
-          <p style="color: #696868;"><b>Note:</b> The environment shader was made based off of the concept art designed by the Art Director of the project team.</p> 
-        </div>
-
-        <!-- Project Report-->
-        <!-- <div class="h-30"></div>
-        <div class="col-md-12">
-          <div class="h-30"></div>
-        </div> -->
-
-        <div class="col-md-3">
-          <div class="h-30"></div>
-            <div id="connectMe" ></div>
+            <p style="color: #696868;"><u><a href="https://www.mobygames.com/game/231023/blindsight-war-of-the-wardens/credits/windows/" target="_blank">Credits</a></u>
+              (MobyGames): This project was developed by a team of students as part of the <b>USC Games AGP</b> course.</p>
             
+
+            <div class="h-10"></div>
+
+            <div style="display:flex; justify-content: center;">
+              <form action="https://store.steampowered.com/app/2187370/Blindsight_War_of_the_Wardens/" method="get" target="_blank">
+                <button type="submit" class="button-52" role="button"><b>Play Game!</b></button>
+              </form> 
+            </div>
+
+            <div class="h-30"></div>
+          </div>
+          
+          <div class="col-md-6" style="text-align: center;">
+            <iframe src="https://drive.google.com/file/d/1_Ft6gJ3GhY9YrqYqWgpOP4gG2J6hwA4o/preview" width="100%" height="360" allow="autoplay" style="border-radius: 10px;"></iframe>
+            <!-- <img src="img/works/scratchRenderer/sunny_0.png" alt="" class="img-responsive" /> -->
+            
+            <h5 style="color:#696868;"><b>Final Shader in Game</b></h5>
+            <div class="h-30"></div>
+          </div>
+
+          </div>
+          <div class="h-10"></div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <!-- <div id="expand-click" class="hoverElement">
+                <div data-target="read-more">
+                  <h4 style="color:#696868;">Read More - Render Comparisons, Implementation Details, Team Members</h4>
+                </div>
+              </div>
+              <div class="h-30"></div> -->
+
+              <!-- add hidden-section class for expandable to work -->
+              <div id="read-more" class="expandable-section "> 
+                <div class="row">
+                  
+                  <div class="col-md-6" style="text-align: center;">
+
+                    <h4 style="color:#696868;"><b>Shader Components</b></h4>
+                    <div class="h-10"></div>
+                    <div class="carousel" aria-roledescription="carousel">
+                      <!-- Render Showcase - Sliding Images -->
+                      <div class="carousel__track" aria-live="polite">
+                        
+                        <div class="carousel__slide" data-caption="Shader">
+                          <img src="img/works/blindsight/custom_lighting_quantized.jpg" alt="Custom Lighting (Point lights) Quantized (HLSL)">
+                          <div class="carousel__caption">Custom Lighting (Point lights) Quantized (HLSL)</div>
+                        </div>
+                        <div class="carousel__slide" data-caption="Shader">
+                          <img src="img/works/blindsight/ws_noise.jpg" alt="World Space Noise (Sub-Graph)">
+                          <div class="carousel__caption">World Space Noise (Shader Graph)</div>
+                        </div>
+                        <div class="carousel__slide" data-caption="Shader">
+                          <img src="img/works/blindsight/ss_halftone.jpg" alt="Screenspace Diamond Halftone (Sub-Graph)">
+                          <div class="carousel__caption">Screenspace Diamond Halftone (Shader Graph)</div>
+                        </div>
+                        <div class="carousel__slide" data-caption="Shader">
+                          <img src="img/works/blindsight/ws_wave.jpg" alt="World Space Wave (Sub-Graph)">
+                          <div class="carousel__caption">World Space Wave (Shader Graph)</div>
+                        </div>
+                        <div class="carousel__slide" data-caption="Shader">
+                          <img src="img/works/blindsight/halftone_noise.jpg" alt="WS Noise + SS Halftone">
+                          <div class="carousel__caption">WS Noise + SS Halftone</div>
+                        </div>
+                        <div class="carousel__slide" data-caption="Shader">
+                          <img src="img/works/blindsight/all_shader.jpg" alt="All parts combined with base texture">
+                          <div class="carousel__caption">All parts combined with base texture</div>
+                        </div>
+                      </div>
+
+                      <button class="carousel__button carousel__button--prev"  aria-label="Previous slide">◀</button>
+                      <button class="carousel__button carousel__button--next"  aria-label="Next slide">▶</button>
+
+                      <div class="carousel__dots"></div>
+                    </div>
+                    
+                    <!-- <h5 style="color:#696868;"><b>Render Outputs</b></h5> -->
+                    <!-- <div class="h-30"></div> -->
+                  </div>
+
+                  <div class="col-md-6" style="text-align: center;">
+
+                    <h4 style="color:#696868;"><b>Visual Effects</b></h4>
+                    <div class="h-10"></div>
+                    <div class="carousel" aria-roledescription="carousel">
+                      <!-- Render Showcase - Sliding Images -->
+                      <div class="carousel__track" aria-live="polite">
+                        
+                        <div class="carousel__slide" data-caption="VFX">
+                          <img src="img/works/blindsight/VFX_Onmpt.gif" alt="Onomatopoeia for Combat Hit">
+                          <div class="carousel__caption">Onomatopoeia for Combat Hit (Particle Systems)</div>
+                        </div>
+                        <div class="carousel__slide" data-caption="VFX">
+                          <img src="img/works/blindsight/VFX_AmuletUnleash.gif" alt="Amulet Unleash">
+                          <div class="carousel__caption">Amulet Unleash (VFX Graphs + C#)</div>
+                        </div>
+                      </div>
+
+                      <button class="carousel__button carousel__button--prev"  aria-label="Previous slide">◀</button>
+                      <button class="carousel__button carousel__button--next"  aria-label="Next slide">▶</button>
+
+                      <div class="carousel__dots"></div>
+                    </div>
+                    
+                    <!-- <h5 style="color:#696868;"><b>Render Outputs</b></h5> -->
+                    <!-- <div class="h-30"></div> -->
+                  </div>
+
+                </div>
+
+                <!-- Note -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="h-30"></div>
+                    <p style="color:#696868;"><b>Note:</b> The environment shader was made based off of the concept art designed by the Art Director of the project team.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
         </div>
     </div>
   </div>
     <!-- end main-container -->
 
-
-    <!-- footer -->
-    <!-- <footer>
-        <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
-        </div>
-    </footer> -->
+  <!-- footer -->
+    <footer>
+            <div class="h-30"></div>
+            <div id="connectMe" ></div>
+    </footer>
     <!-- end footer -->
-    
+
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class=" glyphicon glyphicon-chevron-up"></i></a>
     <!-- end back to top -->
-
-
 
 
     <!-- jQuery -->
@@ -369,6 +258,9 @@
     <script src="js/menu.js"></script>
     <script src="js/animated-headline.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/expand.js"></script>
+    <script src="js/hover.js"></script>
 
 
     <!--  custom script -->
