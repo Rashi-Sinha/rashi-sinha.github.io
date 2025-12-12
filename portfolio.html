@@ -68,9 +68,9 @@
 
                 <li class="box-label">Get in Touch</li>
 
-                <li class="box-social"><a href="http://www.linkedin.com/in/rashi-sinha-rs96"><i class="bi bi-linkedin"></i></a></li>
-                <li class="box-social"><a href="mailto:[rashisin@usc.edu]? subject= &body="><i class="bi bi-envelope-fill"></i></a></li>
-                <li class="box-social"><a href="resume.html"><i class="bi bi-file-pdf-fill"></i></a></li>
+                <li class="box-social"><a href="http://www.linkedin.com/in/rashi-sinha-rs96" target='_blank'><i class="bi bi-linkedin"></i></a></li>
+                <li class="box-social"><a href="mailto:[rashisin@usc.edu]? subject= &body=" target='_blank'><i class="bi bi-envelope-fill"></i></a></li>
+                <li class="box-social"><a href="resume.html" target='_blank'><i class="bi bi-file-pdf-fill"></i></a></li>
 
             </ul>
         </nav>
@@ -137,8 +137,9 @@
 
                     <!-- single work -->
                 
-                    <div class="col-md-4 col-sm-6 All card_style" > <!--data-target="art-grid"> -->
-                        <div onclick = "location.href='rigs_3Dart.html'" class="portfolio_item card_height">
+                    <div class="col-md-4 col-sm-6 All card_style" data-target="art-grid">
+                        <!-- <div onclick = "location.href='rigs_3Dart.html'" class="portfolio_item card_height"> -->
+                        <div class="portfolio_item card_height">
                             <img src="img/works/rigs_thumbnail.jpg" alt="image" class="img-responsive img_style" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
@@ -393,6 +394,27 @@
     <!-- TOOLS expandable_container -->
     <div class="container expandable-grid hidden-grid" id="tools-grid">
 
+
+        <!-- single work -->
+        <div class="col-md-4 col-sm-6 All Tools card_style">
+            <div onclick = "location.href='MovieConvert_Tool.html'" class="portfolio_item card_height">
+                <img src="img/works/movieConvert_thumbnail.png" alt="image" class="img-responsive img_style" />
+                <div class="portfolio_item_hover">
+                    <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                            <span>Movie Convert</span>
+                            <em>Standalone Cross-Platform Tool</em>
+                        </div>
+                    </div>
+                </div>
+            <!-- </a> -->
+            </div>
+            <div class="work_name">
+                <p>Movie Convert</p>
+            </div>
+        </div>
+        
+        <!-- end single work -->
         <!-- single work -->
         <div class="col-md-4 col-sm-6 All Tools card_style">
             <div onclick = "location.href='MirrorPose_Tool.html'" class="portfolio_item card_height">
@@ -529,11 +551,13 @@
     <!-- end TOOLS expandable_container -->
 
 
-    <!-- TOOLS expandable_container -->
+    <!-- ART expandable_container -->
     <div class="container expandable-grid hidden-grid" id="art-grid">
+        <!-- col-m-12 -->
         <!-- <div class="col-md-12"> -->
+            <div class="h-30"></div>
+            <!-- masonry-grid-->
             <div class="masonry-grid masonry-wrapper">
-
                 <!-- single item -->
                 <div class="masonry-item">
                     <div class="media-wrapper">
@@ -643,25 +667,21 @@
                     </div>
                 </div>
                 <!-- end single item -->
-
-
-                <!-- more -->
             </div>
+            <!-- end masonry-grid-->
 
-      </div>
-        
+            <div class="h-30"></div>
 
+        <!-- </div> -->
+        <!-- end col-m-12 -->
     </div>
-    <!-- end TOOLS expandable_container -->
+    <!-- end ART expandable_container -->
 
 
     <!-- footer -->
     <footer>
-        <!-- <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
-        </div> -->
-            <div class="h-30"></div>
-            <div id="connectMe" ></div>
+        <div class="h-10"></div>
+        <div id="connectMe" ></div>
     </footer>
     <!-- end footer -->
 
@@ -684,6 +704,7 @@
     <!--  custom script -->
     <script src="js/custom.js"></script>
     <script src="js/subgrid.js"></script>
+    <script src="js/masonry.js"></script>
     
     
     <!-- google analytics  -->

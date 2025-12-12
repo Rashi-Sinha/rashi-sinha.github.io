@@ -51,15 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-      // scroll back up by 150px (adjust to taste)
+      // scroll back up by 200px (adjust to taste)
       setTimeout(() => {
         window.scrollBy({ top: -200, behavior: "smooth" });
-      }, 275);
+      }, 300);
     }
 
     // --- Smooth scroll into view when collapsing ---
     if (!isCurrentlyHidden && targetGrid.classList.contains('hidden-grid')) {
-    // It was open, and now it just closed
     document.getElementById('category-row').scrollIntoView({
         behavior: 'smooth',
         block: 'start'
@@ -70,18 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const saved = localStorage.getItem('expandedGrid');
-//     if (saved) {
-//         const savedGrid = document.getElementById(saved);
-//         if (savedGrid) {
-//             savedGrid.classList.remove('hidden-grid');
-            
-//             // optional: scroll to it
-//             // savedGrid.scrollIntoView({ behavior: "smooth", block: "start" });
-//         }
-//     }
-// });
+
+// remember last expanded grid and restore when returning to portfolio page, reselect active card
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedGrid = localStorage.getItem('expandedGrid');
@@ -91,66 +80,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const grid = document.getElementById(savedGrid);
         if (grid) {
             grid.classList.remove('hidden-grid');
+            grid.scrollIntoView({ behavior: "smooth", block: "start" });
+            
 
-            // find corresponding card via data-target
+            // find corresponding card via data-target and set as active
             const card = document.querySelector(`[data-target="${savedGrid}"]`);
             if (card) {
                 card.classList.add("card_style_active");
             }
+            // scroll back up by 200px (adjust to taste)
+            setTimeout(() => {
+              window.scrollBy({ top: -200, behavior: "smooth" });
+            }, 300);
         }
     }
 });
 
 
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   // Select all main category cards
-//   const categoryCards = document.querySelectorAll('[data-target]');
-
-//   categoryCards.forEach(card => {
-//     card.addEventListener('click', () => {
-//       const category = card.dataset.target; // e.g. "tech"
-
-//       // Hide expandable cards for all other categories
-//       document.querySelectorAll('.expandable-grid').forEach(gridCard => {
-//         if (!gridCard.classList.contains(category)) {
-//           gridCard.classList.add('hidden-grid');
-//         }
-//       });
-
-//       // Toggle visibility of expandable cards for clicked category
-//       document.querySelectorAll(`.expandable-grid.${category}`).forEach(gridCard => {
-//         gridCard.classList.toggle('hidden-grid');
-//       });
-//     });
-//   });
-// });
-
-// ===================================================================================================
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const categoryCards = document.querySelectorAll('#category-row .card_style');
-
-//   categoryCards.forEach(card => {
-//     card.addEventListener('click', () => {
-//       const targetId = card.dataset.target;
-//       const targetGrid = document.getElementById(targetId);
-
-//       // Only hide other expandable grids, not the main category row
-//       document.querySelectorAll('.expandable-grid').forEach(grid => {
-//         if (grid.id !== targetId) grid.classList.add('hidden-grid');
-//       });
-
-//       // Toggle the clicked grid
-//       targetGrid.classList.toggle('hidden-grid');
-
-//       // Optional: scroll to the expanded section
-//       if (!targetGrid.classList.contains('hidden-grid')) {
-//         targetGrid.scrollIntoView({ behavior: 'smooth' });
-//       }
-//     });
-//   });
-// });

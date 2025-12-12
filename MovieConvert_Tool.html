@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/index.js"></script>
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Rashi Sinha - Portfolio - Mirror Pose</title>
+    <title>Rashi Sinha - Portfolio - Movie Convert</title>
     <link rel="icon" href="img/fav.png" type="image/x-icon">
     
     <!-- Bootstrap -->
@@ -73,7 +73,7 @@
 
                 <li class="box-social"><a href="http://www.linkedin.com/in/rashi-sinha-rs96" target='_blank'><i class="bi bi-linkedin"></i></a></li>
                 <li class="box-social"><a href="mailto:[rashisin@usc.edu]? subject= &body=" target='_blank'><i class="bi bi-envelope-fill"></i></a></li>
-                <li class="box-social"><a href="resume.html" target='_blank'><i class="bi bi-file-pdf-fill"></i></a></li>
+                <li class="box-social"><a href="resume.html"><i class="bi bi-file-pdf-fill" target='_blank'></i></a></li>
                <!-- <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>-->
             </ul>
         </nav>
@@ -82,9 +82,9 @@
     
     <!-- top-bar -->
     <div class="top-bar">
-        <h1 style="color:#696868;">Mirror Pose Tool</h1>
+        <h1 style="color:#696868;">Movie Convert Tool</h1>
         <!-- <p><a href="index.html">Home</a> / <a href="portfolio.html">portfolio</a> / Rasterizer</p> -->
-        <p style="color:#3b3a3a;">Tools / Python Tool for Maya</p>
+        <p style="color:#3b3a3a;">Tools / Standalone Python Application</p>
     </div>
     <!-- end top-bar -->
 
@@ -93,29 +93,33 @@
       <div class="col-md-12">
         <div class="row">
           <div class="col-md-12">
-            <h3 class="text-uppercase">Mirror Pose Tool (WIP)</h3>
+            <h3 class="text-uppercase">Movie Convert Tool</h3>
             <!--<h5>Time to cool down</h5>-->
             <div class="h-30"></div>
           </div>
           <div class="col-md-5">
             <div class="tagcloud">
-              <p class="tag-cloud-link">Autodesk Maya 2026</p>
               <p class="tag-cloud-link">Python</p>
-              <p class="tag-cloud-link">Tool Development</p>
+              <p class="tag-cloud-link">PyQt</p>
+              <p class="tag-cloud-link">FFMPEG</p>
+              <p class="tag-cloud-link">OpenCV</p>
+              <p class="tag-cloud-link">Pyinstaller</p>
             </div>
             <div class="h-30"></div>
-            <p style="color:#696868;">I've been working on a custom Python tool for Autodesk Maya that <b>mirrors character poses across the YZ plane</b> 
-            —  designed to speed up animation workflows and support a variety of rig setups. It's still a work in progress, so I'm sharing what I've got so far . . .
-
-            <br>
-            While more advanced tools exist, I built this lightweight version to address a specific need I ran into while animating a walk cycle for 
-            a Technical Animation for Games class I am teaching. I wanted something accessible, simple and flexible — and that became the motivation behind this project.
-
+            <p style="color:#696868;">This is a <b>standalone, cross-platform</b> application I developed for technical game art 
+              students to streamline their media conversion workflows. Built with an intuitive PyQt interface, the tool replaces a 
+              previously Maya-dependent tool and allows artists to easily convert between image sequences and video files, as well 
+              as reformat videos for compatibility with Maya. (<a href="https://github.com/Rashi-Sinha/MovieConvertStandalone" target="_blank">Github</a>)
+            </p>
+            <p style="color:#696868;">
+            The application is packaged as a simple, double-click executable using PyInstaller and runs on both Windows and macOS, ensuring 
+            accessibility across all student workstations. It has been successfully used in student production pipelines to generate final 
+            animation videos from rendered image sequences and to convert reference footage into Maya-friendly formats for animation.
             </p>
           </div>
         
           <div class="col-md-7" style="text-align: center;">
-            <iframe src="https://drive.google.com/file/d/1NCbJIiTrq9O8SV0eLmg2HhAlO0-4ibw1/preview" width="100%" height="360" allow="autoplay" allowfullscreen style="border-radius: 10px;"></iframe>
+            <iframe src="https://drive.google.com/file/d/1wTNdDLcGWXXEbCwSzZXBRP0mYEIvWyxL/preview" width="100%" height="360" allow="autoplay" allowfullscreen style="border-radius: 10px;"></iframe>
             
             <h5 style="color:#696868;"><b>Tool Demo</b></h5>
             <div class="h-30"></div>
@@ -159,15 +163,17 @@
                     <div style="margin-right: 16px">
                       <p style="color:#696868;">
                         <ol type="1">
-                          <li style="color:#696868;">Mirrors a pose across the YZ Plane.
-                            <br>
-                            For middle/center controls, it simply inverts the transformations.
-                            <br>
-                            For left/right controls (like legs), it swaps the transformations between left and right sides.
+                          <li style="color:#696868;">Converts image sequences to video.
                           </li>
-                          <li style="color:#696868;">Works on selected controls, allowing precise and non-destructive use.
+                          <li style="color:#696868;">Auto-plays converted videos.
                           </li>
-                          <li style="color:#696868;">Compatible with a variety of rig setups via flexible naming convention support (e.g., L_, Left, _L).
+                          <li style="color:#696868;">Allows adding multiple input sources and edit, reorder or delete them.
+                          </li>
+                          <li style="color:#696868;">Combines videos and image sequences into a single video.
+                          </li>
+                          <li style="color:#696868;">Converts video formats.
+                          </li>
+                          <li style="color:#696868;">Converts video to image sequences.
                           </li>
                         </ol>
                       </p>
@@ -177,23 +183,17 @@
 
                 <div class="col-md-6">
                   <div >
-                    <h4 style="color:#696868;"><b>Still in Progress:</b></h4>
-                    <div >
-                      <p style="color:#696868;">
-                        <ol type="1">
-                          <li style="color:#696868;">Working on refining mirroring logic for hand/arm controls.
-                          </li>
-                        </ol>
-                      </p>
-                    </div>
-                    <div class="h-10"></div>
                     <h4 style="color:#696868;"><b>Potential enhancements:</b></h4>
                     <div >
                       <p style="color:#696868;">
                         <ol type="1">
-                          <li style="color:#696868;">Support mirroring across other planes.
+                          <li style="color:#696868;">Add GIF conversions.
                           </li>
-                          <li style="color:#696868;">Add intuitive UI for mirror axis selections. 
+                          <li style="color:#696868;">Add "Help" section.
+                          </li>
+                          <li style="color:#696868;">Display output file Name in the Output Section.
+                          </li>
+                          <li style="color:#696868;">Clean-up output logs.
                           </li>
                         </ol>
                       </p>
@@ -218,8 +218,8 @@
 
     <!-- footer -->
     <footer>
-      <div class="h-30"></div>
-      <div id="connectMe" ></div>
+            <div class="h-30"></div>
+            <div id="connectMe" ></div>
     </footer>
     <!-- end footer -->
 

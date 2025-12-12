@@ -1274,23 +1274,21 @@ div.work_name p {
     transition: all 0.2s ease;
 }
 
-/* .card_style:hover{ */
-
-    /* The core solution */
+.card_style:hover{
     /* background-clip: padding-box;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 
     /* box-shadow: inset 0 6px 18px rgba(0,0,0,0.12); */
-    /* border: 15px solid #d5c1e3;
-    background-color: #d5c1e3;
-} */
+    /* border: 15px solid #d5c1e3; */
+    background-color: #ffe79c;
+}
 
 .card_style_active {
     /* border: 20px solid #f5f5f5;#ffe9a8; */
-    background-color: #fff1c7;
-    border: 20px solid #ebebeb;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    clip-path: inset(-10px -10px 0px -10px);
+    background-color: #ffe79c;
+    border: 20px solid #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    clip-path: inset(-5px -5px 0px -5px);
     z-index: 2
 
     
@@ -1314,18 +1312,20 @@ div.work_name p {
 /*Portfolio Subgrid CSS*/
 
 .expandable-grid{
-    /* background-color: #f5f5f5; #ebebe8; */
+    background-color: #f0f0f0;
     /* border: 10px solid #d5c1e3; */
-    background-color: #ebebeb; 
+    /* background-color: #ebebeb;  */
     border-radius: 1% 1% 2% 2%;
-    z-index: 10;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    clip-path: inset(0px -10px -10px -10px);
+    /* z-index: 9; */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    clip-path: inset(0px -5px -5px -5px);
+    overflow: visible !important;
 }
 .expandable-grid .card_style{
-    border: 10px solid #ebebeb;
+    border: 10px solid #f0f0f0;
     border-radius: 8% 8% 8% 8%;
-    background: #fff1c7;
+    /* background: #fff1c7; */
+    background: #ffe79c;
     padding: 0 !important;
     transition: all 0.2s ease;
     /* dedede */
@@ -1342,9 +1342,9 @@ div.work_name p {
     /* box-shadow: inset 0 6px 18px rgba(0,0,0,0.12); */
     /* border: 10px solid (255,255,255,0.5); */
     /* border: 10px solid #dedede; */
-    background-color: #fff1c7;
-    /* transform: translateX(-0.08rem) translateY(-0.08rem); */
-    z-index: 10;
+    background-color: #ffe591;
+    transform: translateX(-0.08rem) translateY(-0.08rem);
+    /* z-index: 10; */
 }
 
 .expandable-grid .card_height{
@@ -1442,6 +1442,7 @@ body{
 .carousel__slide img{
   width: 100%;
   height: auto;
+
   object-fit: contain;
   display: block;
 }
@@ -1512,30 +1513,15 @@ body{
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-auto-rows: 8px; /* small base row height for masonry effect */
   gap: 1rem;
+  overflow: visible;
 }
 
 /* Each item wrapper */
 .masonry-item {
   display: block;
   transition: filter 0.3s ease, transform 0.3s ease,;
+  overflow: visible;
 }
-
-/* grow in size on hover */
-/* .masonry-item.grow {
-  transform: scale(1.3);
-  z-index: 10;
-} */
-
-/* .masonry-wrapper:hover .masonry-item:not(:hover) {
-  filter: brightness(0.7);
-  transition: filter 0.3s ease;
-}
-
- .masonry-item:hover {
-  filter: brightness(1) drop-shadow(0 12px 35px rgba(0,0,0,0.35));
-  transform: scale(1.3);
-  z-index: 10; 
-} */
 
 
 /* Only dim when at least one item is hovered */
